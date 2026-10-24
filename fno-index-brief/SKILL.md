@@ -68,6 +68,45 @@ previous trading day.
 
 ## 3. Gather data (shared once, then per index)
 
+### 3a. Primary source: Upstox snapshots on the `market-data` branch
+
+A GitHub Actions workflow in `RutikKulkarni/Indian-FNO-Index-Brief` pulls data
+from the Upstox API every 15 minutes during market hours (09:00–15:45 IST,
+Mon–Fri) and publishes the latest snapshot to the `market-data` branch:
+
+```
+latest/_context.json      fetched_at, India VIX + prev close, per-index status
+latest/<KEY>.json         spot, prev_close, change, change_pct, expiry,
+                          upcoming_expiries, lot_size, futures {trading_symbol,
+                          last_price, basis}, rows [strike, ce_oi, pe_oi,
+                          ce_chg_oi, pe_chg_oi, ce_ltp, pe_ltp, ce_volume,
+                          pe_volume, ce_iv, pe_iv, ce_delta, pe_delta]
+latest/_run.log           fetcher log (check it if a file is missing)
+```
+
+Read it first:
+
+```bash
+git clone -q --depth 1 -b market-data https://github.com/RutikKulkarni/Indian-FNO-Index-Brief md
+cat md/latest/_context.json
+python3 scripts/option_chain_metrics.py md/latest/NIFTY.json --spot <spot> --step <strike_step>
+```
+
+(`spot` and `strike_step` are in the same JSON file.) If the clone fails, try
+`gh api "repos/RutikKulkarni/Indian-FNO-Index-Brief/contents/latest/NIFTY.json?ref=market-data" -H "Accept: application/vnd.github.raw"`.
+
+**Freshness check:** compare `fetched_at` with the current IST time.
+- Live session: usable if ≤ 30 min old. Older → fall back to 3b for price, and
+  force "No clear edge" if no fresh option-chain data is found.
+- Pre-market / post-market / closed: the last snapshot of the previous or
+  current session is expected — label it with its timestamp.
+
+The snapshot replaces web lookups for: spot, previous close, change, futures
+basis, India VIX, the full option chain (OI, ΔOI, IV), expiry and lot size.
+Cite it as "Upstox API, <fetched_at>".
+
+### 3b. Web sources (always for context and news; fallback for market data)
+
 Follow `references/data-sources.md` for where to look and fallbacks.
 
 **Shared market context (fetch once per run):**

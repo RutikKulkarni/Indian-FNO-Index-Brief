@@ -37,6 +37,26 @@ The bias comes from a fixed scoring framework
 and it is forced to "No clear edge" when data is stale, signals conflict, or a
 major event is due.
 
+## Live data pipeline (Upstox)
+
+```
+GitHub Actions (every 15 min, 09:00–15:45 IST, Mon–Fri)
+  └─ data_fetcher/upstox_fetch.py  ── Upstox API (read-only Analytics Token)
+       └─ market-data branch: latest/<INDEX>.json + _context.json
+            └─ fno-index-brief skill reads the snapshot → brief
+```
+
+- Data: spot, previous close, nearest futures + basis, India VIX, and the full
+  option chain (OI, change in OI, LTP, volume, IV, delta) for the nearest expiry.
+- Auth: a read-only Upstox **Analytics Token** (free, valid 1 year, cannot place
+  orders) stored as the repository secret `UPSTOX_ANALYTICS_TOKEN`.
+- The `market-data` branch holds only the latest snapshot (force-updated), so
+  repository history stays small.
+- Run it manually from **Actions → Market data snapshot → Run workflow**
+  (`debug` also saves raw API responses).
+- Renew the token yearly at account.upstox.com/developer/apps → Analytics, then
+  update the secret.
+
 ## Repository layout
 
 ```
@@ -57,8 +77,12 @@ fno-index-brief/
 └── scripts/
     ├── option_chain_metrics.py      # PCR, max pain, OI walls, ATM IV
     └── sample_chain.json            # Illustrative test data
+data_fetcher/
+└── upstox_fetch.py                  # Upstox → normalized JSON snapshots
 schedules/
 └── scheduled-run-prompt.md          # Prompts + cron times for scheduled runs
+.github/workflows/
+└── market-data.yml                  # Market-hours snapshot job
 ```
 
 ## Usage
@@ -83,10 +107,11 @@ Add `--json` for machine-readable output. Python 3.8+, no dependencies.
 
 ## Limitations
 
-- Data comes from public web pages and may be delayed by several minutes. This
-  is not a tick-by-tick feed and is unsuitable for scalping.
-- Exchange sites sometimes block automated access; the skill falls back to other
-  sources and marks missing data as "not available".
+- Market data refreshes every 15 minutes, and GitHub's scheduler can start runs
+  a few minutes late. This is not a tick-by-tick feed and is unsuitable for
+  scalping.
+- News, global cues and FII/DII flows come from public web pages; missing data
+  is marked "not available".
 - Low-liquidity indices (FinNifty, Midcap Nifty, Nifty Next 50, Bankex) give
   weaker option-chain signals.
 

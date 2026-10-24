@@ -106,7 +106,9 @@ Output **No clear edge** regardless of score when any of these hold:
   highest-CE-OI strike for CE side).
 - **Invalidation**: the level where the view is wrong (usually the opposite OI wall
   or the day's low/high). Always state it.
-- **Support / resistance**: top PE-OI and CE-OI strikes.
+- **Support / resistance**: the nearest significant OI walls (closest strike
+  with ≥ 50% of the side's biggest OI) and the strongest walls, both printed by
+  `option_chain_metrics.py`. Use the nearest walls for the session's levels.
 - **Expected range** for the session if VIX is available:
   `spot × (VIX / 100) / √252` ≈ one-standard-deviation daily move.
 

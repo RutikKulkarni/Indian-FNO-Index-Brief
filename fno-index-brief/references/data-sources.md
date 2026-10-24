@@ -1,5 +1,15 @@
 # Data Sources
 
+## 0. Primary: Upstox snapshots (market-data branch)
+
+Spot, previous close, futures, India VIX and the full option chain for every
+index come from the `market-data` branch of
+`RutikKulkarni/Indian-FNO-Index-Brief`, refreshed every 15 minutes in market
+hours by `.github/workflows/market-data.yml` using a read-only Upstox
+Analytics Token. See SKILL.md §3a for the file layout and freshness rule.
+Use the web sources below only for news, global cues and FII/DII flows, or
+when a snapshot is missing or stale.
+
 Use web search / page fetch. Prefer official sources; fall back in order. Always
 record the source name and the timestamp shown on the page.
 

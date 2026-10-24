@@ -16,7 +16,7 @@ Usage:
     python3 option_chain_metrics.py chain.json --spot 25150 --step 50 [--json]
 
 Output: PCR (OI and change-in-OI), max pain, ATM strike, top-3 CE/PE OI strikes,
-OI-based support/resistance nearest to spot, and ATM IV when available.
+the strongest and nearest-significant OI support/resistance, and ATM IV when available.
 """
 import argparse
 import json
@@ -78,6 +78,18 @@ def compute(rows, spot, step):
     resistance = max(above, key=lambda r: r["ce_oi"])["strike"] if above else None
     support = max(below, key=lambda r: r["pe_oi"])["strike"] if below else None
 
+    # Nearest "significant" wall: closest strike to spot whose OI is at least
+    # half of the biggest OI on that side.
+    def nearest_significant(side, key, reverse):
+        if not side:
+            return None
+        cutoff = 0.5 * max(r[key] for r in side)
+        ordered = sorted(side, key=lambda r: r["strike"], reverse=reverse)
+        return next(r["strike"] for r in ordered if r[key] >= cutoff)
+
+    near_res = nearest_significant(above, "ce_oi", reverse=False)
+    near_sup = nearest_significant(below, "pe_oi", reverse=True)
+
     atm_row = min(rows, key=lambda r: abs(r["strike"] - atm))
     ivs = [v for v in (atm_row["ce_iv"], atm_row["pe_iv"]) if v not in (None, "")]
     atm_iv = round(sum(float(v) for v in ivs) / len(ivs), 2) if ivs else None
@@ -94,8 +106,10 @@ def compute(rows, spot, step):
         "max_pain": max_pain(rows),
         "top_ce_oi": [(r["strike"], r["ce_oi"]) for r in top_ce],
         "top_pe_oi": [(r["strike"], r["pe_oi"]) for r in top_pe],
-        "resistance_above_spot": resistance,
-        "support_below_spot": support,
+        "strongest_resistance_above_spot": resistance,
+        "strongest_support_below_spot": support,
+        "nearest_significant_resistance": near_res,
+        "nearest_significant_support": near_sup,
         "atm_iv": atm_iv,
     }
 
@@ -111,8 +125,8 @@ def print_human(m):
     print(f"ΔOI  CE {fmt_num(m['chg_ce_oi'])}  |  PE {fmt_num(m['chg_pe_oi'])}")
     print("Top CE OI (resistance): " + ", ".join(f"{fmt_num(s)} ({fmt_num(o)})" for s, o in m["top_ce_oi"]))
     print("Top PE OI (support):    " + ", ".join(f"{fmt_num(s)} ({fmt_num(o)})" for s, o in m["top_pe_oi"]))
-    print(f"Nearest OI resistance above spot: {fmt_num(m['resistance_above_spot'])}")
-    print(f"Nearest OI support below spot:    {fmt_num(m['support_below_spot'])}")
+    print(f"Nearest significant resistance: {fmt_num(m['nearest_significant_resistance'])}   strongest above spot: {fmt_num(m['strongest_resistance_above_spot'])}")
+    print(f"Nearest significant support:    {fmt_num(m['nearest_significant_support'])}   strongest below spot: {fmt_num(m['strongest_support_below_spot'])}")
     print(f"ATM IV: {m['atm_iv'] if m['atm_iv'] is not None else 'n/a'}")
 
 

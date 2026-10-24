@@ -167,10 +167,9 @@ def num(x):
 
 def normalize_chain(chain):
     rows = []
-    spot = pcr = None
+    spot = None
     for s in chain:
         spot = spot or num(s.get("underlying_spot_price"))
-        pcr = pcr or num(s.get("pcr"))
         ce = (s.get("call_options") or {})
         pe = (s.get("put_options") or {})
         cm, pm = ce.get("market_data") or {}, pe.get("market_data") or {}
@@ -189,7 +188,7 @@ def normalize_chain(chain):
         })
     rows = [r for r in rows if r["strike"] is not None]
     rows.sort(key=lambda r: r["strike"])
-    return rows, spot, pcr
+    return rows, spot
 
 
 def fetch_index(name, cfg, key, prices, token, raw_dir, log):
@@ -213,9 +212,8 @@ def fetch_index(name, cfg, key, prices, token, raw_dir, log):
         if raw_dir:
             with open(os.path.join(raw_dir, f"{name}_chain.json"), "w") as f:
                 json.dump(resp, f, indent=1)
-        rows, chain_spot, pcr = normalize_chain(chain)
+        rows, chain_spot = normalize_chain(chain)
         snap["spot"] = snap["spot"] or chain_spot
-        snap["upstox_pcr"] = pcr
         snap["rows"] = rows
     else:
         snap["rows"] = []
