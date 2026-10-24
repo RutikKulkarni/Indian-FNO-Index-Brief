@@ -44,22 +44,32 @@ jobs:
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: steps.window.outputs.run == 'true'
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         if: steps.window.outputs.run == 'true'
         with:
           python-version: "3.12"
 
       - name: Fetch snapshots from Upstox
+        id: fetch
         if: steps.window.outputs.run == 'true'
         env:
           UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
         run: |
+          mkdir -p out/latest
           RAW=""
           if [ "${{ inputs.debug }}" = "true" ]; then RAW="--raw out/raw"; fi
-          python3 data_fetcher/upstox_fetch.py --out out/latest $RAW
+          if [ -z "$UPSTOX_ANALYTICS_TOKEN" ]; then
+            echo "Secret UPSTOX_ANALYTICS_TOKEN is empty or missing" | tee out/latest/_run.log
+            echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          set +e
+          python3 data_fetcher/upstox_fetch.py --out out/latest $RAW 2>&1 | tee out/latest/_run.log
+          code=${PIPESTATUS[0]}
+          echo "exit code: $code" >> out/latest/_run.log
+          if [ "$code" = "0" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
 
       - name: Publish to market-data branch
         if: steps.window.outputs.run == 'true'
@@ -72,3 +82,9 @@ jobs:
           git add -A
           git commit -q -m "Market snapshot $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" market-data
+
+      - name: Fail if fetch failed
+        if: steps.window.outputs.run == 'true' && steps.fetch.outputs.ok != 'true'
+        run: |
+          echo "Fetch failed — see out/latest/_run.log on the market-data branch"
+          exit 1
