@@ -26,6 +26,7 @@ import urllib.request
 API = "https://api.upstox.com"
 INSTRUMENTS_URL = "https://assets.upstox.com/market-quote/instruments/exchange/{exch}.json.gz"
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+USER_AGENT = "Indian-FNO-Index-Brief/1.0 (+https://github.com/RutikKulkarni/Indian-FNO-Index-Brief)"
 
 # Candidate Upstox instrument keys per index. The first one that returns a
 # price is used; if none do, the instruments master file is searched by name.
@@ -47,6 +48,7 @@ def api_get(path, params, token, retries=3):
     req = urllib.request.Request(url, headers={
         "Accept": "application/json",
         "Authorization": f"Bearer {token}",
+        "User-Agent": USER_AGENT,
     })
     for attempt in range(retries):
         try:
@@ -71,7 +73,8 @@ _instrument_cache = {}
 def instruments(exch):
     """Upstox instruments master for an exchange (public file, no auth)."""
     if exch not in _instrument_cache:
-        with urllib.request.urlopen(INSTRUMENTS_URL.format(exch=exch), timeout=60) as r:
+        req = urllib.request.Request(INSTRUMENTS_URL.format(exch=exch), headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=60) as r:
             _instrument_cache[exch] = json.loads(gzip.decompress(r.read()).decode())
     return _instrument_cache[exch]
 
