@@ -185,10 +185,15 @@ def normalize_chain(chain):
             "ce_volume": num(cm.get("volume")), "pe_volume": num(pm.get("volume")),
             "ce_iv": num(cg.get("iv")), "pe_iv": num(pg.get("iv")),
             "ce_delta": num(cg.get("delta")), "pe_delta": num(pg.get("delta")),
+            "ce_gamma": num(cg.get("gamma")), "pe_gamma": num(pg.get("gamma")),
+            "ce_theta": num(cg.get("theta")), "pe_theta": num(pg.get("theta")),
         })
     rows = [r for r in rows if r["strike"] is not None]
     rows.sort(key=lambda r: r["strike"])
     return rows, spot
+
+
+_meta_cache = {}
 
 
 def fetch_index(name, cfg, key, prices, token, raw_dir, log):
@@ -200,9 +205,17 @@ def fetch_index(name, cfg, key, prices, token, raw_dir, log):
         snap["change"] = round(snap["spot"] - snap["prev_close"], 2)
         snap["change_pct"] = round(100 * snap["change"] / snap["prev_close"], 2)
 
-    expiry, expiries, lot = nearest_expiry(key, token)
+    if name not in _meta_cache:
+        expiry, expiries, lot = nearest_expiry(key, token)
+        fut = nearest_future(cfg, key, token, log)
+        _meta_cache[name] = (expiry, expiries, lot, fut)
+    else:
+        expiry, expiries, lot, fut = _meta_cache[name]
+        if fut and fut.get("instrument_key"):  # refresh futures price only
+            q = ltp([fut["instrument_key"]], token)
+            fut = dict(fut, last_price=next(iter(q.values()), {}).get("last_price"))
     snap.update({"expiry": expiry, "upcoming_expiries": expiries, "lot_size": lot})
-    snap["futures"] = nearest_future(cfg, key, token, log)
+    snap["futures"] = dict(fut) if fut else None
     if snap["futures"] and snap["futures"].get("last_price") and snap["spot"]:
         snap["futures"]["basis"] = round(snap["futures"]["last_price"] - snap["spot"], 2)
 
@@ -221,31 +234,31 @@ def fetch_index(name, cfg, key, prices, token, raw_dir, log):
     return snap
 
 
+# ---------------------------------------------------------------- burst series
+def series_point(snap, vix, n_strikes=5):
+    """Compact per-snapshot record for momentum analysis."""
+    rows, spot, step = snap.get("rows", []), snap.get("spot"), snap.get("strike_step")
+    point = {
+        "t": snap["fetched_at"], "spot": spot, "vix": vix,
+        "fut": (snap.get("futures") or {}).get("last_price"),
+        "total_ce_oi": sum(r["ce_oi"] for r in rows),
+        "total_pe_oi": sum(r["pe_oi"] for r in rows),
+        "strikes": [],
+    }
+    if spot and step and rows:
+        atm = round(spot / step) * step
+        near = [r for r in rows if abs(r["strike"] - atm) <= n_strikes * step]
+        point["atm"] = atm
+        point["strikes"] = [{k: r[k] for k in ("strike", "ce_oi", "pe_oi", "ce_ltp", "pe_ltp")} for r in near]
+    return point
+
+
 # ---------------------------------------------------------------- main
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="data/latest")
-    ap.add_argument("--raw", default="", help="Also save raw API responses here (debugging)")
-    ap.add_argument("--only", default="", help="Comma-separated index keys (default: all)")
-    args = ap.parse_args()
-
-    token = os.environ.get("UPSTOX_ANALYTICS_TOKEN", "").strip()
-    if not token:
-        sys.exit("UPSTOX_ANALYTICS_TOKEN is not set")
-    os.makedirs(args.out, exist_ok=True)
-    if args.raw:
-        os.makedirs(args.raw, exist_ok=True)
-
-    log_lines = []
-
-    def log(msg):
-        print(msg)
-        log_lines.append(msg)
-
+def snapshot_pass(wanted, resolved, token, out_dir, raw_dir, log):
+    """Fetch every wanted index once. Returns (context, snaps)."""
     fetched_at = dt.datetime.now(IST).isoformat(timespec="seconds")
-    wanted = {k.strip().upper() for k in args.only.split(",") if k.strip()} or set(INDICES)
-
-    resolved, prices = resolve_index_keys(token, log)
+    keys = list(resolved.values()) + [VIX_KEY]
+    prices = ltp(keys, token)
     vix = prices.get(VIX_KEY, {})
     context = {
         "fetched_at": fetched_at,
@@ -254,30 +267,83 @@ def main():
         "india_vix_prev_close": num(vix.get("cp")),
         "resolved_keys": resolved,
     }
-
-    status = {}
+    status, snaps = {}, {}
     for name in sorted(wanted & set(INDICES)):
         if name not in resolved:
             status[name] = "unresolved"
             continue
         try:
-            snap = fetch_index(name, INDICES[name], resolved[name], prices, token, args.raw, log)
+            snap = fetch_index(name, INDICES[name], resolved[name], prices, token, raw_dir, log)
             snap["fetched_at"] = fetched_at
             snap["source"] = "Upstox API"
-            with open(os.path.join(args.out, f"{name}.json"), "w") as f:
+            with open(os.path.join(out_dir, f"{name}.json"), "w") as f:
                 json.dump(snap, f, indent=1)
+            snaps[name] = snap
             status[name] = f"ok ({len(snap['rows'])} strikes, expiry {snap.get('expiry')})"
         except Exception as e:  # noqa: BLE001
             status[name] = f"error: {e}"
-        log(f"{name}: {status[name]}")
-        time.sleep(0.5)
-
+        log(f"{fetched_at} {name}: {status[name]}")
+        time.sleep(0.3)
     context["status"] = status
+    return context, snaps
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default="data/latest")
+    ap.add_argument("--raw", default="", help="Also save raw API responses here (debugging)")
+    ap.add_argument("--only", default="", help="Comma-separated index keys (default: all)")
+    ap.add_argument("--burst", type=int, default=1, help="Number of snapshots to take (default 1)")
+    ap.add_argument("--interval", type=float, default=30, help="Seconds between burst snapshots")
+    ap.add_argument("--series-out", default="", help="Where to write <INDEX>.json burst series")
+    args = ap.parse_args()
+
+    token = os.environ.get("UPSTOX_ANALYTICS_TOKEN", "").strip()
+    if not token:
+        sys.exit("UPSTOX_ANALYTICS_TOKEN is not set")
+    os.makedirs(args.out, exist_ok=True)
+    if args.raw:
+        os.makedirs(args.raw, exist_ok=True)
+    if args.series_out:
+        os.makedirs(args.series_out, exist_ok=True)
+
+    log_lines = []
+
+    def log(msg):
+        print(msg, flush=True)
+        log_lines.append(msg)
+
+    wanted = {k.strip().upper() for k in args.only.split(",") if k.strip()} or set(INDICES)
+    resolved, _ = resolve_index_keys(token, log)
+
+    series = {name: [] for name in wanted}
+    context = {}
+    for i in range(max(1, args.burst)):
+        t0 = time.time()
+        try:
+            context, snaps = snapshot_pass(wanted, resolved, token, args.out,
+                                           args.raw if i == 0 else "", log)
+            for name, snap in snaps.items():
+                series[name].append(series_point(snap, context.get("india_vix")))
+        except Exception as e:  # noqa: BLE001
+            log(f"[warn] burst pass {i + 1} failed: {e}")
+        if args.series_out:
+            for name, pts in series.items():
+                if pts:
+                    with open(os.path.join(args.series_out, f"{name}.json"), "w") as f:
+                        json.dump({"index": name, "interval_sec": args.interval,
+                                   "points": pts}, f, indent=1)
+        if i < args.burst - 1:
+            time.sleep(max(0.0, args.interval - (time.time() - t0)))
+
+    if not context:
+        sys.exit("No snapshot pass succeeded")
+    context["burst"] = {"snapshots": args.burst, "interval_sec": args.interval} if args.burst > 1 else None
     context["log"] = log_lines
     with open(os.path.join(args.out, "_context.json"), "w") as f:
         json.dump(context, f, indent=1)
 
-    if not any(s.startswith("ok") for s in status.values()):
+    if not any(str(s).startswith("ok") for s in context.get("status", {}).values()):
         sys.exit("No index fetched successfully")
 
 

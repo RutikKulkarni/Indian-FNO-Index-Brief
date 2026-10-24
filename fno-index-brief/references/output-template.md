@@ -38,6 +38,10 @@ unavailable, and then write "not available" rather than removing the row.
 | Support (top PE OI) | <strike (OI)>, <…>, <…> |
 | ATM IV | <…> |
 
+**Momentum (30-sec burst <HH:MM–HH:MM>):** <spot change, up/down ticks,
+near-ATM OI added CE vs PE, ATM premium change> → <building up | building down |
+mixed | not available>
+
 **Signal read**
 | Signal | Score | Why |
 |---|---|---|
@@ -56,6 +60,13 @@ unavailable, and then write "not available" rather than removing the row.
 - **Invalidated if:** <level>
 - **Expected range today:** <low – high>
 - **Watch:** <the one thing most likely to change this view>
+
+**Premium reference (<CE|PE> side, data <HH:MM>)** — only for CE/PE-side bias
+| Option | LTP | IV | Delta | Theta/day | @<invalidation> | @<confirmation> | @<range edge> |
+|---|---|---|---|---|---|---|---|
+| <strike side (ITM/ATM/OTM)> | <…> | <…> | <…> | <…> | <…> | <…> | <…> |
+_Estimated premiums if the index reached each level now; they ignore time decay
+and IV changes. Reference data only — not an entry, stop-loss or target._
 
 <repeat the index block for each selected index>
 

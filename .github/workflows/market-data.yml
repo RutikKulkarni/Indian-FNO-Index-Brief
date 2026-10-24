@@ -1,15 +1,24 @@
 name: Market data snapshot
 
-# Pulls index F&O snapshots from Upstox during market hours and publishes them
-# to the `market-data` branch (one commit, force-updated, so history stays small).
+# Pulls index F&O data from Upstox during market hours and publishes it to the
+# `market-data` branch (one commit, force-updated, so history stays small).
+#
+#  - Regular: every 15 min, all indices -> latest/<INDEX>.json
+#  - Burst:   10 snapshots, 30 s apart, before each intraday brief
+#             (≈10:28, 12:28, 14:28 IST) for NIFTY, BANKNIFTY, SENSEX
+#             -> series/<INDEX>.json (+ refreshed latest/<INDEX>.json)
 
 on:
   schedule:
-    # Every 15 min, Mon–Fri, 03:00–10:45 UTC (= 08:30–16:15 IST).
-    # The job itself skips runs outside 09:00–15:45 IST.
-    - cron: "*/15 3-10 * * 1-5"
+    - cron: "*/15 3-10 * * 1-5"   # 08:30–16:15 IST; job skips outside 09:00–15:45
+    - cron: "58 4,6,8 * * 1-5"    # 10:28, 12:28, 14:28 IST burst
   workflow_dispatch:
     inputs:
+      mode:
+        description: "snapshot (all indices once) or burst (10 x 30 s)"
+        type: choice
+        options: [snapshot, burst]
+        default: snapshot
       debug:
         description: "Also publish raw API responses"
         type: boolean
@@ -26,15 +35,25 @@ concurrency:
   group: market-data
   cancel-in-progress: false
 
+env:
+  BURST_INDICES: NIFTY,BANKNIFTY,SENSEX
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - name: Check market window (IST)
+      - name: Decide mode and market window (IST)
         id: window
         run: |
           now=$(TZ=Asia/Kolkata date +%H%M)
+          mode="snapshot"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            mode="${{ inputs.mode }}"
+          elif [ "${{ github.event.schedule }}" = "58 4,6,8 * * 1-5" ]; then
+            mode="burst"
+          fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           elif [ "$now" -ge 0900 ] && [ "$now" -le 1545 ]; then
@@ -43,6 +62,7 @@ jobs:
             echo "Outside market window ($now IST), skipping."
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
+          echo "Mode: $mode"
 
       - uses: actions/checkout@v5
         if: steps.window.outputs.run == 'true'
@@ -52,39 +72,58 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch snapshots from Upstox
+      - name: Fetch from Upstox
         id: fetch
         if: steps.window.outputs.run == 'true'
         env:
           UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
         run: |
           mkdir -p out/latest
-          RAW=""
-          if [ "${{ inputs.debug }}" = "true" ]; then RAW="--raw out/raw"; fi
           if [ -z "$UPSTOX_ANALYTICS_TOKEN" ]; then
             echo "Secret UPSTOX_ANALYTICS_TOKEN is empty or missing" | tee out/latest/_run.log
             echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
+          ARGS="--out out/latest"
+          if [ "${{ inputs.debug }}" = "true" ]; then ARGS="$ARGS --raw out/raw"; fi
+          LOG=out/latest/_run.log
+          if [ "${{ steps.window.outputs.mode }}" = "burst" ]; then
+            ARGS="$ARGS --only $BURST_INDICES --burst 10 --interval 30 --series-out out/series"
+            LOG=out/series/_run.log; mkdir -p out/series
+            # keep the regular run's context file; burst writes its own
+            ARGS="${ARGS/--out out\/latest/--out out/latest_burst}"
+          fi
           set +e
-          python3 data_fetcher/upstox_fetch.py --out out/latest $RAW 2>&1 | tee out/latest/_run.log
+          python3 data_fetcher/upstox_fetch.py $ARGS 2>&1 | tee "$LOG"
           code=${PIPESTATUS[0]}
-          echo "exit code: $code" >> out/latest/_run.log
+          echo "exit code: $code" >> "$LOG"
+          if [ "${{ steps.window.outputs.mode }}" = "burst" ] && [ -d out/latest_burst ]; then
+            # burst refreshes the per-index snapshots it fetched; its context goes to series/
+            mv out/latest_burst/_context.json out/series/_context.json 2>/dev/null
+            cp out/latest_burst/*.json out/latest/ 2>/dev/null
+            rm -rf out/latest_burst
+          fi
           if [ "$code" = "0" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
 
-      - name: Publish to market-data branch
+      - name: Publish to market-data branch (keep other files)
         if: steps.window.outputs.run == 'true'
         run: |
+          REPO="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          if git clone -q --depth 1 -b market-data "$REPO" prev 2>/dev/null; then
+            mkdir -p out/latest out/series
+            [ -d prev/latest ] && cp -n prev/latest/* out/latest/ 2>/dev/null || true
+            [ -d prev/series ] && cp -n prev/series/* out/series/ 2>/dev/null || true
+          fi
           cd out
           git init -q -b market-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          printf '# Market data snapshots\n\nAuto-generated by the Market data snapshot workflow. Latest snapshot only.\n' > README.md
+          printf '# Market data snapshots\n\nAuto-generated by the Market data snapshot workflow.\n\n- latest/: newest snapshot per index (check each file'"'"'s fetched_at)\n- series/: 30-second burst before each intraday brief\n' > README.md
           git add -A
-          git commit -q -m "Market snapshot $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" market-data
+          git commit -q -m "Market data ${{ steps.window.outputs.mode }} $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          git push -f "$REPO" market-data
 
       - name: Fail if fetch failed
         if: steps.window.outputs.run == 'true' && steps.fetch.outputs.ok != 'true'
         run: |
-          echo "Fetch failed — see out/latest/_run.log on the market-data branch"
+          echo "Fetch failed — see _run.log on the market-data branch"
           exit 1

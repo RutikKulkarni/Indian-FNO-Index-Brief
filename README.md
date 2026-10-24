@@ -41,9 +41,10 @@ major event is due.
 
 ```
 GitHub Actions (every 15 min, 09:00–15:45 IST, Mon–Fri)
-  └─ data_fetcher/upstox_fetch.py  ── Upstox API (read-only Analytics Token)
-       └─ market-data branch: latest/<INDEX>.json + _context.json
-            └─ fno-index-brief skill reads the snapshot → brief
+  ├─ regular: all indices once        → market-data: latest/<INDEX>.json
+  └─ burst (≈10:28, 12:28, 14:28 IST):
+       10 snapshots × 30 s, Nifty / Bank Nifty / Sensex → series/<INDEX>.json
+            └─ fno-index-brief skill reads both → brief
 ```
 
 - Data: spot, previous close, nearest futures + basis, India VIX, and the full
@@ -76,6 +77,8 @@ fno-index-brief/
 │       └── bankex.md
 └── scripts/
     ├── option_chain_metrics.py      # PCR, max pain, OI walls, ATM IV
+    ├── series_momentum.py           # 30-sec burst → short-term momentum read
+    ├── premium_levels.py            # Option premiums now + estimated at index levels
     └── sample_chain.json            # Illustrative test data
 data_fetcher/
 └── upstox_fetch.py                  # Upstox → normalized JSON snapshots

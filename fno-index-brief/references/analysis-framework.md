@@ -20,6 +20,16 @@ reason next to every score.
 | Mild down, mid-to-lower range | -1 |
 | Strong down-move, near day low, below VWAP | -2 |
 
+### 1b. Short-term momentum — 30-second burst (adjusts signal 1)
+Only for intraday briefs with a fresh series (see SKILL.md). From
+`series_momentum.py`:
+- "building up" (price rising on mostly up-ticks with fresh put writing near
+  ATM) → raise the price-trend score by 1 (max +2)
+- "building down" → lower it by 1 (min −2)
+- "mixed" or a move against the day's trend → no change, and cap confidence at
+  Medium (the move is not confirmed)
+Say in one line what the burst showed.
+
 ### 2. Option-chain positioning (weight ×2)
 - **PCR (OI)** = total PE OI ÷ total CE OI.
   - > 1.3 → heavy put writing (support below) → bullish lean, but > 1.6 can mean

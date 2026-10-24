@@ -82,7 +82,16 @@ latest/<KEY>.json         spot, prev_close, change, change_pct, expiry,
                           ce_chg_oi, pe_chg_oi, ce_ltp, pe_ltp, ce_volume,
                           pe_volume, ce_iv, pe_iv, ce_delta, pe_delta]
 latest/_run.log           fetcher log (check it if a file is missing)
+series/<KEY>.json         30-second burst: ~10 snapshots taken just before each
+                          intraday brief (≈10:28, 12:28, 14:28 IST) for NIFTY,
+                          BANKNIFTY, SENSEX — spot, futures, VIX, total OI and
+                          near-ATM strikes (OI + premiums) per snapshot
+series/_context.json      burst run status and log
 ```
+
+Each `latest/<KEY>.json` has its own `fetched_at` — check freshness per index,
+because a burst refreshes only the indices it covers. Option rows also carry
+`ce_gamma/pe_gamma` and `ce_theta/pe_theta` (theta is per day).
 
 Read it first:
 
@@ -104,6 +113,33 @@ python3 scripts/option_chain_metrics.py md/latest/NIFTY.json --spot <spot> --ste
 The snapshot replaces web lookups for: spot, previous close, change, futures
 basis, India VIX, the full option chain (OI, ΔOI, IV), expiry and lot size.
 Cite it as "Upstox API, <fetched_at>".
+
+**Short-term momentum (intraday briefs):** if `series/<KEY>.json` exists and
+its last point is from today and ≤ 20 minutes old, run
+
+```bash
+python3 scripts/series_momentum.py md/series/<KEY>.json
+```
+
+It reports the burst window's spot/futures move, up/down ticks, VIX change,
+OI added near ATM on each side, ATM premium change and a one-line read
+("building up" / "building down" / "mixed"). Use it as described in the
+analysis framework (signal 1b). If no fresh series exists, say "momentum: not
+available" and skip that signal.
+
+**Premium reference table:** after you have the levels for an index with a
+CE-side or PE-side bias, run
+
+```bash
+python3 scripts/premium_levels.py md/latest/<KEY>.json --levels <invalidation>,<confirmation>,<range edge> --side <CE|PE> --strikes 2
+```
+
+and include the table it prints (ATM ± 2 strikes on the bias side). It shows
+each option's live premium, IV, delta, theta per day and an estimate of the
+premium at each level. Present it as reference data with the script's caveat
+(estimates ignore time decay and IV changes). Do not label rows or numbers as
+entry, stop-loss, target, "buy" or "sell", and do not single out one strike as
+the one to trade. For "No clear edge" indices, skip the table.
 
 ### 3b. Web sources (always for context and news; fallback for market data)
 
@@ -172,4 +208,7 @@ For a scheduled run, keep the whole brief readable on a phone in under two minut
 - [ ] Bias follows from the scored signals (not from a hunch)
 - [ ] "No clear edge" used whenever the framework says so
 - [ ] Invalidation level stated for every CE/PE-side bias
+- [ ] Momentum read included for intraday briefs (or marked not available)
+- [ ] Premium table shown only for CE/PE-side indices, with its caveat, and
+      without entry/stop/target labels
 - [ ] Risk note present; no instruction to buy/sell, no position sizing
