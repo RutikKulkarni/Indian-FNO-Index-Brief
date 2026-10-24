@@ -20,11 +20,16 @@
 ## Relationship to other indices
 Usually leads Nifty. If HDFC Bank and ICICI Bank diverge, Bank Nifty tends to range — mention it.
 
-## Contract notes (as of Oct 2026 — verify if stale)
+## Contract notes (verified 24 Oct 2026 — re-verify if older than 30 days)
 - Exchange symbol: `BANKNIFTY`
 - Lot size: 30 (from Jan 2026 contracts)
 - Expiry: **monthly only** — last Tuesday of the month (weekly discontinued)
 - Strike interval used for analysis: 100
 
-Lot sizes and expiry days change by SEBI / exchange circular. If a search shows
-a newer circular, use it and mention the change in the brief.
+- Holiday rule: if the expiry day is a trading holiday, expiry moves to the
+  **previous trading day** (e.g. Nifty weekly 10 Nov 2026 → Mon 9 Nov; NSE
+  monthly 24 Nov 2026 → Mon 23 Nov).
+
+Lot sizes and expiry days change by SEBI / exchange circular. Verify them with
+sources dated in the **last 30 days**; if a newer circular exists, use it and
+mention the change in the brief.

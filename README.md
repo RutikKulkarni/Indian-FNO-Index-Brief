@@ -7,18 +7,20 @@ those, each with its own option-chain read, drivers, news, and a
 
 Supported indices:
 
-| Key | Index | Exchange | Expiry (as of Oct 2026) |
-|---|---|---|---|
-| `NIFTY` | Nifty 50 | NSE | Weekly, Tuesday |
-| `BANKNIFTY` | Nifty Bank | NSE | Monthly, last Tuesday |
-| `FINNIFTY` | Nifty Financial Services | NSE | Monthly, last Tuesday |
-| `MIDCPNIFTY` | Nifty Midcap Select | NSE | Monthly, last Tuesday |
-| `NIFTYNXT50` | Nifty Next 50 | NSE | Monthly, last Tuesday |
-| `SENSEX` | BSE Sensex | BSE | Weekly, Thursday |
-| `BANKEX` | BSE Bankex | BSE | Monthly, last Thursday |
+| Key | Index | Exchange | Lot size | Expiry (verified 24 Oct 2026) |
+|---|---|---|---|---|
+| `NIFTY` | Nifty 50 | NSE | 65 | Weekly, Tuesday |
+| `BANKNIFTY` | Nifty Bank | NSE | 30 | Monthly, last Tuesday |
+| `FINNIFTY` | Nifty Financial Services | NSE | 60 | Monthly, last Tuesday |
+| `MIDCPNIFTY` | Nifty Midcap Select | NSE | 120 | Monthly, last Tuesday |
+| `NIFTYNXT50` | Nifty Next 50 | NSE | 25 | Monthly, last Tuesday |
+| `SENSEX` | BSE Sensex | BSE | 20 | Weekly, Thursday |
+| `BANKEX` | BSE Bankex | BSE | 30 | Monthly, last Thursday |
 
-Contract specs change by SEBI / exchange circular; the skill re-checks them at
-run time.
+If an expiry day is a trading holiday, expiry moves to the previous trading day
+(e.g. Nifty weekly 10 Nov 2026 → Mon 9 Nov; NSE monthly 24 Nov 2026 → Mon 23 Nov).
+Contract specs change by SEBI / exchange circular; the skill re-verifies them on
+every run using sources dated in the last 30 days.
 
 ## What a brief contains
 

@@ -47,8 +47,24 @@ If the request is from a scheduled run, the index list is in the run's prompt.
    then (theta decay, gamma risk, pinning near max pain).
 
 Contract specs (lot size, expiry weekday, weekly vs monthly) change by
-SEBI/exchange circular. Each profile has an "as of" date — if it is older than
-~3 months, or a search shows a newer circular, use the newer facts and say so.
+SEBI/exchange circular. Each profile has a "verified" date — if it is older than
+30 days, re-verify with sources dated in the last 30 days, use the newer facts,
+and say so. If an expiry day falls on a trading holiday, expiry moves to the
+previous trading day.
+
+**Source freshness (strict):**
+- Always check the publish/update date of every page before using it. Put the
+  current month and year in search queries (e.g. "Bank Nifty expiry October 2026").
+- Contract specs and the expiry calendar: only sources dated in the last 30 days,
+  or an official NSE/BSE circular still in force.
+- News: only items published in the last 24 hours (last 72 hours on a Monday or
+  after a holiday).
+- Prices, OI, VIX: only today's data (see freshness rules in `data-sources.md`).
+- If a page has no visible date, treat it as undated and confirm the fact with a
+  second, dated source before using it. Never use an older article to state a
+  current fact.
+- Watch for regulatory changes: search "SEBI F&O <current month year>" each run
+  and flag any new circular on expiries, lot sizes or margins in the brief.
 
 ## 3. Gather data (shared once, then per index)
 

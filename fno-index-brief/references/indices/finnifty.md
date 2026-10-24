@@ -18,12 +18,17 @@ Banks plus NBFCs, insurers, AMCs and exchanges. Similar to Bank Nifty with extra
 ## Relationship to other indices
 Tracks Bank Nifty closely; divergence usually comes from Bajaj twins or insurers.
 
-## Contract notes (as of Oct 2026 — verify if stale)
+## Contract notes (verified 24 Oct 2026 — re-verify if older than 30 days)
 - Exchange symbol: `FINNIFTY`
 - Lot size: 60 (from Jan 2026 contracts)
 - Expiry: **monthly only** — last Tuesday of the month (weekly discontinued)
 - Strike interval used for analysis: 50
 - Liquidity is far lower than Nifty / Bank Nifty — wide bid-ask spreads; mention this
 
-Lot sizes and expiry days change by SEBI / exchange circular. If a search shows
-a newer circular, use it and mention the change in the brief.
+- Holiday rule: if the expiry day is a trading holiday, expiry moves to the
+  **previous trading day** (e.g. Nifty weekly 10 Nov 2026 → Mon 9 Nov; NSE
+  monthly 24 Nov 2026 → Mon 23 Nov).
+
+Lot sizes and expiry days change by SEBI / exchange circular. Verify them with
+sources dated in the **last 30 days**; if a newer circular exists, use it and
+mention the change in the brief.

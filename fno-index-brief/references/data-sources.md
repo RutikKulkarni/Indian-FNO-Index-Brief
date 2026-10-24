@@ -46,6 +46,18 @@ Moneycontrol, CNBC-TV18. Note the publish time; ignore articles older than
   the circular. Verify when the profile's "as of" is stale.
 - Trading holidays: NSE "Holidays" page for the current year.
 
+## Source dating
+
+Every source must show a publish or update date. Reject:
+- contract-spec / calendar pages older than 30 days (unless an official circular
+  still in force)
+- news older than 24 hours (72 hours after a weekend or holiday)
+- any undated page, unless a second dated source confirms the same fact
+
+Verified 24 Oct 2026 against: Quantsapp expiry calendar (Oct–Nov 2026),
+StockMojo F&O lot sizes (updated 22 Oct 2026), StockeZee lot sizes (Oct 2026),
+OneTradeJournal 2026 lot sizes and expiry rules.
+
 ## Freshness rules
 | Session | Max age for price / OI data |
 |---|---|
