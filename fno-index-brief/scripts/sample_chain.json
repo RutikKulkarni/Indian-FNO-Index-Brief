@@ -1,0 +1,15 @@
+{
+  "_note": "Illustrative sample data for testing the script. Not real market data.",
+  "rows": [
+    {"strike": 24900, "ce_oi": 20000,  "pe_oi": 180000, "ce_chg_oi": -1000, "pe_chg_oi": 15000},
+    {"strike": 24950, "ce_oi": 25000,  "pe_oi": 150000, "ce_chg_oi": -500,  "pe_chg_oi": 12000},
+    {"strike": 25000, "ce_oi": 60000,  "pe_oi": 320000, "ce_chg_oi": 2000,  "pe_chg_oi": 40000},
+    {"strike": 25050, "ce_oi": 70000,  "pe_oi": 200000, "ce_chg_oi": 3000,  "pe_chg_oi": 22000},
+    {"strike": 25100, "ce_oi": 110000, "pe_oi": 210000, "ce_chg_oi": 8000,  "pe_chg_oi": 25000},
+    {"strike": 25150, "ce_oi": 150000, "pe_oi": 140000, "ce_chg_oi": 12000, "pe_chg_oi": 9000, "ce_iv": 11.4, "pe_iv": 12.2},
+    {"strike": 25200, "ce_oi": 230000, "pe_oi": 90000,  "ce_chg_oi": 20000, "pe_chg_oi": 4000},
+    {"strike": 25250, "ce_oi": 180000, "pe_oi": 40000,  "ce_chg_oi": 15000, "pe_chg_oi": 1000},
+    {"strike": 25300, "ce_oi": 290000, "pe_oi": 30000,  "ce_chg_oi": 30000, "pe_chg_oi": 500},
+    {"strike": 25350, "ce_oi": 120000, "pe_oi": 15000,  "ce_chg_oi": 6000,  "pe_chg_oi": 0}
+  ]
+}
