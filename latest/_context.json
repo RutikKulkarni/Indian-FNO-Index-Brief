@@ -1,0 +1,34 @@
+{
+ "fetched_at": "2026-10-30T15:15:09+05:30",
+ "source": "Upstox API (analytics token)",
+ "india_vix": 15.31,
+ "india_vix_prev_close": 15.12,
+ "resolved_keys": {
+  "NIFTY": "NSE_INDEX|Nifty 50",
+  "BANKNIFTY": "NSE_INDEX|Nifty Bank",
+  "FINNIFTY": "NSE_INDEX|Nifty Fin Service",
+  "MIDCPNIFTY": "NSE_INDEX|NIFTY MID SELECT",
+  "NIFTYNXT50": "NSE_INDEX|Nifty Next 50",
+  "SENSEX": "BSE_INDEX|SENSEX",
+  "BANKEX": "BSE_INDEX|BANKEX"
+ },
+ "status": {
+  "BANKEX": "ok (151 strikes, expiry 2026-11-26)",
+  "BANKNIFTY": "ok (154 strikes, expiry 2026-11-23)",
+  "FINNIFTY": "ok (101 strikes, expiry 2026-11-23)",
+  "MIDCPNIFTY": "ok (177 strikes, expiry 2026-11-23)",
+  "NIFTY": "ok (104 strikes, expiry 2026-11-03)",
+  "NIFTYNXT50": "ok (218 strikes, expiry 2026-11-23)",
+  "SENSEX": "ok (174 strikes, expiry 2026-11-05)"
+ },
+ "burst": null,
+ "log": [
+  "2026-10-30T15:15:09+05:30 BANKEX: ok (151 strikes, expiry 2026-11-26)",
+  "2026-10-30T15:15:09+05:30 BANKNIFTY: ok (154 strikes, expiry 2026-11-23)",
+  "2026-10-30T15:15:09+05:30 FINNIFTY: ok (101 strikes, expiry 2026-11-23)",
+  "2026-10-30T15:15:09+05:30 MIDCPNIFTY: ok (177 strikes, expiry 2026-11-23)",
+  "2026-10-30T15:15:09+05:30 NIFTY: ok (104 strikes, expiry 2026-11-03)",
+  "2026-10-30T15:15:09+05:30 NIFTYNXT50: ok (218 strikes, expiry 2026-11-23)",
+  "2026-10-30T15:15:09+05:30 SENSEX: ok (174 strikes, expiry 2026-11-05)"
+ ]
+}
