@@ -86,7 +86,12 @@ schedules/
 └── scheduled-run-prompt.md          # Prompts + cron times for scheduled runs
 .github/workflows/
 └── market-data.yml                  # Market-hours snapshot job
+third_party/
+└── day-trader-skill/                # 11 US day-trading skills (MIT, J. Schincariol)
 ```
+
+`third_party/` holds skills by other authors, copied unchanged with their
+licenses. See [`third_party/README.md`](third_party/README.md).
 
 ## Usage
 
