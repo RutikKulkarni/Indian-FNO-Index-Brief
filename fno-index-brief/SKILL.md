@@ -141,6 +141,28 @@ premium at each level. Present it as reference data with the script's caveat
 entry, stop-loss, target, "buy" or "sell", and do not single out one strike as
 the one to trade. For "No clear edge" indices, skip the table.
 
+### 3a+. India skills (same checkout, scripts under `india-skills/` in the repo)
+
+Run each that applies; cite its data time. If a file is missing or stale, say
+"not available" for that line and continue.
+
+| Step | Command (repo root = `repo`) | Feeds |
+|---|---|---|
+| Opening range (live only, after 09:30) | `python3 repo/india-skills/india-orb/orb.py --candles md/latest/candles_<KEY>.json` | signal 1 (one line) |
+| Breadth & heavyweights (NIFTY, BANKNIFTY, SENSEX) | `python3 repo/india-skills/india-scanner/scan.py --root md --index <KEY>` | signal 6 |
+| FII / participant positioning (once per brief) | `python3 repo/india-skills/india-smartmoney/smartmoney.py --root md --days 5` | signal 5, market context |
+| Heavyweight news (once per brief) | `python3 repo/india-skills/india-news/news.py --root md --hours 24` | signal 7, news list |
+| Time Machine (indices with a CE/PE-side bias) | `python3 repo/india-skills/india-timemachine/timemachine.py --history md/history/<KEY>_5m.json --spot <spot> --up <upper level> --down <lower level>` (pre-market: `--at 09:15`) | confidence check |
+
+For the Time Machine, the upper and lower levels are the bias's confirmation
+and invalidation levels (whichever is above spot is `--up`). Show its table and
+read under the bias. If the bias-side level is not reached first more often
+than the other level, cap that index's confidence at Low and say so.
+
+Results due for heavyweights today (india-analyst method) and any active
+alert in `repo/india-skills/india-alerts/alerts.json` that is near spot can be
+mentioned in Event watch.
+
 ### 3b. Web sources (always for context and news; fallback for market data)
 
 Follow `references/data-sources.md` for where to look and fallbacks.

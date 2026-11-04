@@ -1,0 +1,9 @@
+{
+  "_note": "Upstox index-options charges used by the trade calculator. Verified 2026-06-13 (knowyourbrokerage.in/upstox/charges). Check your contract note and update these when they change.",
+  "brokerage_per_order": 20,
+  "stt_sell_pct": 0.15,
+  "exchange_txn_pct": 0.03553,
+  "sebi_pct": 0.0001,
+  "stamp_buy_pct": 0.003,
+  "gst_pct": 18
+}

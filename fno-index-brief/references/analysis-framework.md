@@ -20,6 +20,10 @@ reason next to every score.
 | Mild down, mid-to-lower range | -1 |
 | Strong down-move, near day low, below VWAP | -2 |
 
+Opening range (`india-orb`, live sessions after 09:30): a breakout that is
+holding supports a ±1 trend score in its direction; a failed breakout or price
+back inside the range points to 0.
+
 ### 1b. Short-term momentum — 30-second burst (adjusts signal 1)
 Only for intraday briefs with a fresh series (see SKILL.md). From
 `series_momentum.py`:
@@ -56,6 +60,9 @@ Say in one line what the burst showed.
   "No clear edge" and note that option premiums are expensive.
 
 ### 5. Futures basis & FII positioning (weight ×1)
+- FII index-futures positioning from `india-smartmoney` (participant OI):
+  heavily net short and still adding shorts → −1; covering shorts / adding
+  longs over the last sessions → +1 (or 0 if still heavily short).
 - Futures premium widening with rising OI → long build-up (+1).
 - Premium shrinking / discount with rising OI → short build-up (-1).
 - FII net long/short ratio in index futures, when published, as context.
@@ -109,6 +116,13 @@ Output **No clear edge** regardless of score when any of these hold:
 | High | |normalised| ≥ 0.5, signals 1 and 2 agree, no event risk, data < 15 min old |
 | Medium | |normalised| ≥ 0.35, no forced-neutral conditions |
 | Low | Anything else, or any event within the session, or expiry-day gamma risk |
+
+## Time Machine check (CE/PE-side bias only)
+
+Run `india-timemachine` with the confirmation and invalidation levels. If the
+bias-side level is not reached first more often than the other level in the
+history replay or the simulation, cap confidence at Low and say so in one
+line. The Time Machine never upgrades confidence by itself.
 
 ## Levels to state for every CE/PE-side bias
 

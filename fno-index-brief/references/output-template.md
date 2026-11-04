@@ -18,6 +18,7 @@ unavailable, and then write "not available" rather than removing the row.
 | Brent crude | <…> | <…> |
 | USD/INR | <…> | <…> |
 | FII / DII cash (prev. day) | <₹… cr / ₹… cr> | |
+| FII index futures (NSE, <date>) | <net ±… contracts, …% long> | <±… over 5 sessions> |
 
 **Top news**
 - <Headline> — <one-line likely impact, and on which indices>
@@ -37,6 +38,9 @@ unavailable, and then write "not available" rather than removing the row.
 | Resistance (top CE OI) | <strike (OI)>, <…>, <…> |
 | Support (top PE OI) | <strike (OI)>, <…>, <…> |
 | ATM IV | <…> |
+
+**Opening range:** <range low–high; broke above/below at HH:MM, holding / failed / inside | forming | not available>
+**Heavyweights:** <breadth up/down; 2–3 heavyweights with % move; read>
 
 **Momentum (30-sec burst <HH:MM–HH:MM>):** <spot change, up/down ticks,
 near-ATM OI added CE vs PE, ATM premium change> → <building up | building down |
@@ -60,6 +64,13 @@ mixed | not available>
 - **Invalidated if:** <level>
 - **Expected range today:** <low – high>
 - **Watch:** <the one thing most likely to change this view>
+
+**Time Machine (<from HH:MM>, <N> sessions + 10,000 paths)** — only for CE/PE-side bias
+| Check | <upper level> first | <lower level> first | Neither by close |
+|---|---|---|---|
+| History replay | <…%> | <…%> | <…%> |
+| Simulation | <…%> | <…%> | <…%> |
+_Read: <script read>. How the index behaved before, not a prediction._
 
 **Premium reference (<CE|PE> side, data <HH:MM>)** — only for CE/PE-side bias
 | Option | LTP | IV | Delta | Theta/day | @<invalidation> | @<confirmation> | @<range edge> |

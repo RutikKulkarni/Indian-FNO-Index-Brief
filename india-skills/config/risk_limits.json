@@ -1,0 +1,12 @@
+{
+  "_note": "YOUR limits for the Risk Manager. Every value is null until you set it; a null rule is skipped and reported as 'not set'. Rupee amounts are per trade / per day across all lots.",
+  "max_loss_per_trade": null,
+  "daily_loss_limit": null,
+  "max_trades_per_day": null,
+  "min_reward_risk": null,
+  "max_lots": null,
+  "max_capital_per_trade": null,
+  "no_entry_before": null,
+  "no_entry_after": null,
+  "expiry_day_no_entry_after": null
+}
