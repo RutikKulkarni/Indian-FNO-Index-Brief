@@ -1,23 +1,28 @@
 name: Market data snapshot
 
-# Pulls index F&O data from Upstox during market hours and publishes it to the
-# `market-data` branch (one commit, force-updated, so history stays small).
+# Pulls Indian index F&O data from Upstox (and public NSE files) and publishes
+# it to the `market-data` branch (one commit, force-updated).
 #
-#  - Regular: every 15 min, all indices -> latest/<INDEX>.json
-#  - Burst:   10 snapshots, 30 s apart, before each intraday brief
-#             (≈10:28, 12:28, 14:28 IST) for NIFTY, BANKNIFTY, SENSEX
-#             -> series/<INDEX>.json (+ refreshed latest/<INDEX>.json)
+# Modes
+#  snapshot  all indices once + intraday candles, breadth, news, alerts
+#  burst     10 snapshots x 30 s for NIFTY, BANKNIFTY, SENSEX, then the extras
+#  daily     index constituents, 70 sessions of 5-min history, NSE smart-money files
+#
+# GitHub's schedule is best-effort and often runs late or skips. The scheduled
+# briefs therefore start a run themselves (workflow_dispatch) right before they
+# analyse; the crons below are only a fallback.
 
 on:
   schedule:
-    - cron: "*/15 3-10 * * 1-5"   # 08:30–16:15 IST; job skips outside 09:00–15:45
-    - cron: "58 4,6,8 * * 1-5"    # 10:28, 12:28, 14:28 IST burst
+    - cron: "*/15 3-10 * * 1-5"   # snapshot, 08:30–16:15 IST (skips outside 09:00–15:45)
+    - cron: "58 4,6,8 * * 1-5"    # burst, ~10:28 / 12:28 / 14:28 IST
+    - cron: "45 13 * * 1-5"       # daily, 19:15 IST
   workflow_dispatch:
     inputs:
       mode:
-        description: "snapshot (all indices once) or burst (10 x 30 s)"
+        description: "snapshot, burst or daily"
         type: choice
-        options: [snapshot, burst]
+        options: [snapshot, burst, daily]
         default: snapshot
       debug:
         description: "Also publish raw API responses"
@@ -30,6 +35,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: market-data
@@ -41,7 +47,7 @@ env:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Decide mode and market window (IST)
         id: window
@@ -52,9 +58,13 @@ jobs:
             mode="${{ inputs.mode }}"
           elif [ "${{ github.event.schedule }}" = "58 4,6,8 * * 1-5" ]; then
             mode="burst"
+          elif [ "${{ github.event.schedule }}" = "45 13 * * 1-5" ]; then
+            mode="daily"
           fi
           echo "mode=$mode" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$mode" = "daily" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           elif [ "$now" -ge 0900 ] && [ "$now" -le 1545 ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
@@ -72,58 +82,81 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch from Upstox
-        id: fetch
+      - name: Start from the current market-data branch
         if: steps.window.outputs.run == 'true'
+        run: |
+          mkdir -p out
+          REPO="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          if git clone -q --depth 1 -b market-data "$REPO" prev 2>/dev/null; then
+            rm -rf prev/.git prev/raw
+            cp -r prev/. out/
+          fi
+          mkdir -p out/latest out/series out/state
+
+      - name: Fetch index snapshots from Upstox
+        id: fetch
+        if: steps.window.outputs.run == 'true' && steps.window.outputs.mode != 'daily'
         env:
           UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
         run: |
-          mkdir -p out/latest
           if [ -z "$UPSTOX_ANALYTICS_TOKEN" ]; then
             echo "Secret UPSTOX_ANALYTICS_TOKEN is empty or missing" | tee out/latest/_run.log
             echo "ok=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          ARGS="--out out/latest"
-          if [ "${{ inputs.debug }}" = "true" ]; then ARGS="$ARGS --raw out/raw"; fi
-          LOG=out/latest/_run.log
-          if [ "${{ steps.window.outputs.mode }}" = "burst" ]; then
-            ARGS="$ARGS --only $BURST_INDICES --burst 10 --interval 30 --series-out out/series"
-            LOG=out/series/_run.log; mkdir -p out/series
-            # keep the regular run's context file; burst writes its own
-            ARGS="${ARGS/--out out\/latest/--out out/latest_burst}"
-          fi
+          DBG=""
+          if [ "${{ inputs.debug }}" = "true" ]; then DBG="--raw out/raw"; fi
           set +e
-          python3 data_fetcher/upstox_fetch.py $ARGS 2>&1 | tee "$LOG"
-          code=${PIPESTATUS[0]}
-          echo "exit code: $code" >> "$LOG"
-          if [ "${{ steps.window.outputs.mode }}" = "burst" ] && [ -d out/latest_burst ]; then
-            # burst refreshes the per-index snapshots it fetched; its context goes to series/
-            mv out/latest_burst/_context.json out/series/_context.json 2>/dev/null
-            cp out/latest_burst/*.json out/latest/ 2>/dev/null
+          if [ "${{ steps.window.outputs.mode }}" = "burst" ]; then
             rm -rf out/latest_burst
+            python3 data_fetcher/upstox_fetch.py --out out/latest_burst $DBG --only $BURST_INDICES \
+              --burst 10 --interval 30 --series-out out/series 2>&1 | tee out/series/_run.log
+            code=${PIPESTATUS[0]}
+            echo "exit code: $code" >> out/series/_run.log
+            if [ -d out/latest_burst ]; then
+              mv out/latest_burst/_context.json out/series/_context.json 2>/dev/null
+              cp out/latest_burst/*.json out/latest/ 2>/dev/null
+              rm -rf out/latest_burst
+            fi
+          else
+            python3 data_fetcher/upstox_fetch.py --out out/latest $DBG 2>&1 | tee out/latest/_run.log
+            code=${PIPESTATUS[0]}
+            echo "exit code: $code" >> out/latest/_run.log
           fi
           if [ "$code" = "0" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
 
-      - name: Publish to market-data branch (keep other files)
+      - name: Fetch daily data (constituents, history, NSE smart money)
+        id: daily
+        if: steps.window.outputs.run == 'true' && steps.window.outputs.mode == 'daily'
+        env:
+          UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
+        run: python3 data_fetcher/india_data.py --root out constituents history smartmoney
+
+      - name: Fetch intraday extras (candles, breadth, news) and check alerts
+        if: steps.window.outputs.run == 'true' && steps.window.outputs.mode != 'daily'
+        env:
+          UPSTOX_ANALYTICS_TOKEN: ${{ secrets.UPSTOX_ANALYTICS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          EXTRA=""
+          [ -f out/reference/constituents_NIFTY.json ] || EXTRA="constituents"
+          python3 data_fetcher/india_data.py --root out $EXTRA intraday breadth news alerts
+
+      - name: Publish to market-data branch
         if: steps.window.outputs.run == 'true'
         run: |
           REPO="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
-          if git clone -q --depth 1 -b market-data "$REPO" prev 2>/dev/null; then
-            mkdir -p out/latest out/series
-            [ -d prev/latest ] && cp -n prev/latest/* out/latest/ 2>/dev/null || true
-            [ -d prev/series ] && cp -n prev/series/* out/series/ 2>/dev/null || true
-          fi
           cd out
+          tail -n 400 state/india_data.log > state/india_data.tmp 2>/dev/null && mv state/india_data.tmp state/india_data.log
           git init -q -b market-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          printf '# Market data snapshots\n\nAuto-generated by the Market data snapshot workflow.\n\n- latest/: newest snapshot per index (check each file'"'"'s fetched_at)\n- series/: 30-second burst before each intraday brief\n' > README.md
+          printf '# Market data\n\nAuto-generated by the Market data snapshot workflow.\n\n- latest/: newest snapshot, 1-min candles, breadth and news (check each fetched_at)\n- series/: 30-second burst before intraday briefs\n- history/: ~70 sessions of 5-min index candles\n- smartmoney/: NSE participant OI, bulk and block deals\n- reference/: index constituents\n- state/: alert state and fetch logs\n' > README.md
           git add -A
           git commit -q -m "Market data ${{ steps.window.outputs.mode }} $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
           git push -f "$REPO" market-data
 
       - name: Fail if fetch failed
-        if: steps.window.outputs.run == 'true' && steps.fetch.outputs.ok != 'true'
+        if: steps.window.outputs.run == 'true' && steps.window.outputs.mode != 'daily' && steps.fetch.outputs.ok != 'true'
         run: |
           echo "Fetch failed — see _run.log on the market-data branch"
           exit 1

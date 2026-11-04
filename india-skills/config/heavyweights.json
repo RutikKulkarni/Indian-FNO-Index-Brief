@@ -1,0 +1,6 @@
+{
+  "_note": "NSE symbols used for the heavyweight scan and news. Check against the latest NSE index factsheet when the index is rebalanced. SENSEX uses its constituents' NSE quotes as a proxy.",
+  "NIFTY": ["HDFCBANK", "ICICIBANK", "RELIANCE", "INFY", "BHARTIARTL", "LT", "ITC", "TCS", "AXISBANK", "SBIN", "KOTAKBANK", "M&M"],
+  "BANKNIFTY": ["HDFCBANK", "ICICIBANK", "SBIN", "KOTAKBANK", "AXISBANK", "INDUSINDBK", "FEDERALBNK", "BANKBARODA"],
+  "SENSEX": ["HDFCBANK", "ICICIBANK", "RELIANCE", "INFY", "BHARTIARTL", "TCS", "LT", "ITC", "SBIN", "AXISBANK", "KOTAKBANK"]
+}

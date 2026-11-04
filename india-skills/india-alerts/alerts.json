@@ -1,0 +1,4 @@
+{
+  "_note": "Your index level alerts. Each alert fires at most once per day and opens a GitHub issue in this repo (GitHub notifies you by email/app). direction: above | below. Set active false to pause.",
+  "alerts": []
+}
