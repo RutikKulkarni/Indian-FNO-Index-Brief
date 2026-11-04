@@ -242,7 +242,7 @@ def cmd_news(root, log, tok):
             keys_in = [keys_in]
         items.append({
             "published": ts_iso,
-            "headline": item.get("headline") or item.get("title"),
+            "headline": item.get("heading") or item.get("headline") or item.get("title"),
             "summary": item.get("summary") or item.get("description"),
             "link": item.get("article_link") or item.get("link") or item.get("url"),
             "symbols": sorted({sym_by_key.get(k, k) for k in (keys_in or [])}),
