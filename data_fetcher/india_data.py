@@ -261,7 +261,16 @@ def cmd_news(root, log, tok):
                     add(x, k)
             else:
                 add(it)
-    items = [i for i in items if i["headline"]]
+    merged = {}
+    for i in items:
+        if not i["headline"]:
+            continue
+        k = i["link"] or i["headline"]
+        if k in merged:
+            merged[k]["symbols"] = sorted(set(merged[k]["symbols"]) | set(i["symbols"]))
+        else:
+            merged[k] = i
+    items = list(merged.values())
     items.sort(key=lambda i: i["published"] or "", reverse=True)
     write_json(root, "latest/news.json", {"fetched_at": now_ist().isoformat(timespec="seconds"),
                                           "source": "Upstox News API", "items": items[:150]})
