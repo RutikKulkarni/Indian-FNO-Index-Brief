@@ -1,0 +1,186 @@
+{
+ "fetched_at": "2026-11-07T01:36:49+05:30",
+ "source": "NSE block.csv",
+ "deals": [
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+   "side": "BUY",
+   "qty": "183000",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "HELIOS MUTUAL FUND",
+   "side": "BUY",
+   "qty": "116000",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "HELIOS MUTUAL FUND",
+   "side": "BUY",
+   "qty": "101500",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "BANDHAN MUTUAL FUND",
+   "side": "BUY",
+   "qty": "600000",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "PARAM CAPITAL",
+   "side": "BUY",
+   "qty": "729729",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "BANDHAN MUTUAL FUND",
+   "side": "BUY",
+   "qty": "200000",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "SUBHKAM VENTURES I PVT LTD",
+   "side": "BUY",
+   "qty": "250000",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "SANSHI FUND - I",
+   "side": "BUY",
+   "qty": "200100",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "BANDHAN MUTUAL FUND",
+   "side": "BUY",
+   "qty": "17823",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "BANDHAN MUTUAL FUND",
+   "side": "BUY",
+   "qty": "38148",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "SETU SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "410000",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "OM PRAKASH BHAIYA",
+   "side": "BUY",
+   "qty": "1565000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "ADITYA KUMAR HALWASIYA",
+   "side": "BUY",
+   "qty": "8300000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "PARESH N BHAGAT",
+   "side": "BUY",
+   "qty": "1565000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "CARBON RESOURCES(P) LTD.",
+   "side": "BUY",
+   "qty": "1565000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "RAJIV GOENKA",
+   "side": "BUY",
+   "qty": "1565000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "JYOTIPRASAD TAPARIA",
+   "side": "BUY",
+   "qty": "1565000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "ALIVUS",
+   "name": "Alivus Life Sciences Ltd",
+   "client": "NIRMA LIMITED",
+   "side": "SELL",
+   "qty": "2846300",
+   "price": "1370.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "RICON COMMODITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "9865000",
+   "price": "160.00"
+  },
+  {
+   "date": "06-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "RAM CHANDRA AGARWAL",
+   "side": "SELL",
+   "qty": "6260000",
+   "price": "160.00"
+  }
+ ]
+}
