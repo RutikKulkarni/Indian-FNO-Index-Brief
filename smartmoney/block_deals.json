@@ -1,0 +1,240 @@
+{
+ "fetched_at": "2026-11-14T02:10:18+05:30",
+ "source": "NSE block.csv",
+ "deals": [
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "ADITYA BIRLA SUN LIFE MUTUAL FUND",
+   "side": "BUY",
+   "qty": "4200000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "WILLIAM BLAIR EMERGING MARKETS EX CHINA GROWTH FUND",
+   "side": "BUY",
+   "qty": "61297",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "BNP PARIBAS FINANCIAL MARKETS",
+   "side": "BUY",
+   "qty": "3817000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "EDELWEISS MUTUAL FUND",
+   "side": "BUY",
+   "qty": "1015000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FGTFEBP FIAM SELECT EMERGING MARKETS EQUITY COMMINGLED POOL",
+   "side": "BUY",
+   "qty": "3847600",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIAM SELECT EMERGING MARKETS EQUITY FUND LP",
+   "side": "BUY",
+   "qty": "540000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIDELITY INVESTMENT TR FIDELITY SAI SUSTAINABLE EMERGING MARKETS EQUITY FD",
+   "side": "BUY",
+   "qty": "137000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIDELITY INVESTMENT TRUST FIDELITY SERIES EMERGING MARKETS FUND",
+   "side": "BUY",
+   "qty": "7610300",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIDELITY INVESTMENT TRUST FIDELITY SUSTAINABLE EMERGING MARKETS EQUITY FUND",
+   "side": "BUY",
+   "qty": "40000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIDELITY RUTLAND SQUARE TRUST II STRATEGIC ADVISERS FID EMG MARKETS FUND",
+   "side": "BUY",
+   "qty": "8475900",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIDELITY RUTLAND SQUARE TRUST II: STRATEGIC ADVISERS EMERGING MARKETS FUND",
+   "side": "BUY",
+   "qty": "2296700",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "FIDELITY SELECT EMERGING MARKETS EQUITY INSTITUTIONAL TRUST",
+   "side": "BUY",
+   "qty": "277500",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "GHISALLO MASTER FUND LP",
+   "side": "BUY",
+   "qty": "3435000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "GOLDMAN SACHS BANK EUROPE SE",
+   "side": "BUY",
+   "qty": "3626000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "GOVERNMENT OF SINGAPORE",
+   "side": "BUY",
+   "qty": "2177506",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "HDFC MUTUAL FUND",
+   "side": "BUY",
+   "qty": "1410000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "MONETARY AUTHORITY OF SINGAPORE",
+   "side": "BUY",
+   "qty": "497494",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "MORGAN STANLEY ASIA SINGAPORE PTE",
+   "side": "BUY",
+   "qty": "4199000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "MORGAN STANLEY ASIA SINGAPORE PTE",
+   "side": "BUY",
+   "qty": "5725000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "MOTILAL OSWAL MUTUAL FUND",
+   "side": "BUY",
+   "qty": "5250000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "NORGES BANK ON ACCOUNT OF THE GOVERNMENT PENSION FUND GLOBAL",
+   "side": "BUY",
+   "qty": "1015000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "SOCIETE GENERALE",
+   "side": "BUY",
+   "qty": "14778000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "BAJAJ ALLIANZ LIFE INSURANCE COMPANY LIMITED",
+   "side": "BUY",
+   "qty": "1015000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "TEXAS MUNICIPAL RETIREMENT SYSTEM",
+   "side": "BUY",
+   "qty": "329789",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "WILLIAM BLAIR EMERGING MARKETS EX CHINA GROWTH COLLECTIVE INVESTMENT FUND",
+   "side": "BUY",
+   "qty": "623914",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "SVF II MEERKAT (DE) LLC",
+   "side": "SELL",
+   "qty": "76400000",
+   "price": "246.75"
+  }
+ ]
+}

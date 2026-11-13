@@ -1,0 +1,360 @@
+{
+ "index": "NIFTY",
+ "fetched_at": "2026-11-13T14:50:42+05:30",
+ "source": "Upstox API",
+ "advancers": 9,
+ "decliners": 40,
+ "unchanged": 1,
+ "stocks": [
+  {
+   "symbol": "ADANIENT",
+   "industry": "Metals & Mining",
+   "ltp": 2687.9,
+   "prev_close": 2741.5,
+   "change_pct": -1.96
+  },
+  {
+   "symbol": "ADANIPORTS",
+   "industry": "Services",
+   "ltp": 1903.3,
+   "prev_close": 1930.0,
+   "change_pct": -1.38
+  },
+  {
+   "symbol": "APOLLOHOSP",
+   "industry": "Healthcare",
+   "ltp": 8528.0,
+   "prev_close": 8515.0,
+   "change_pct": 0.15
+  },
+  {
+   "symbol": "ASIANPAINT",
+   "industry": "Consumer Durables",
+   "ltp": 2555.0,
+   "prev_close": 2536.5,
+   "change_pct": 0.73
+  },
+  {
+   "symbol": "AXISBANK",
+   "industry": "Financial Services",
+   "ltp": 1336.8,
+   "prev_close": 1342.9,
+   "change_pct": -0.45
+  },
+  {
+   "symbol": "BSE",
+   "industry": "Financial Services",
+   "ltp": 3919.0,
+   "prev_close": 3909.1,
+   "change_pct": 0.25
+  },
+  {
+   "symbol": "BAJAJ-AUTO",
+   "industry": "Automobile and Auto Components",
+   "ltp": 10819.0,
+   "prev_close": 10945.0,
+   "change_pct": -1.15
+  },
+  {
+   "symbol": "BAJFINANCE",
+   "industry": "Financial Services",
+   "ltp": 1113.1,
+   "prev_close": 1115.0,
+   "change_pct": -0.17
+  },
+  {
+   "symbol": "BAJAJFINSV",
+   "industry": "Financial Services",
+   "ltp": 1861.0,
+   "prev_close": 1887.1,
+   "change_pct": -1.38
+  },
+  {
+   "symbol": "BEL",
+   "industry": "Capital Goods",
+   "ltp": 398.85,
+   "prev_close": 404.8,
+   "change_pct": -1.47
+  },
+  {
+   "symbol": "BHARTIARTL",
+   "industry": "Telecommunication",
+   "ltp": 2118.6,
+   "prev_close": 2096.0,
+   "change_pct": 1.08
+  },
+  {
+   "symbol": "CIPLA",
+   "industry": "Healthcare",
+   "ltp": 1397.7,
+   "prev_close": 1408.3,
+   "change_pct": -0.75
+  },
+  {
+   "symbol": "COALINDIA",
+   "industry": "Oil Gas & Consumable Fuels",
+   "ltp": 403.4,
+   "prev_close": 404.3,
+   "change_pct": -0.22
+  },
+  {
+   "symbol": "DRREDDY",
+   "industry": "Healthcare",
+   "ltp": 1376.6,
+   "prev_close": 1386.6,
+   "change_pct": -0.72
+  },
+  {
+   "symbol": "EICHERMOT",
+   "industry": "Automobile and Auto Components",
+   "ltp": 7605.0,
+   "prev_close": 7549.0,
+   "change_pct": 0.74
+  },
+  {
+   "symbol": "ETERNAL",
+   "industry": "Consumer Services",
+   "ltp": 364.35,
+   "prev_close": 364.35,
+   "change_pct": 0.0
+  },
+  {
+   "symbol": "GRASIM",
+   "industry": "Construction Materials",
+   "ltp": 3046.0,
+   "prev_close": 3114.9,
+   "change_pct": -2.21
+  },
+  {
+   "symbol": "HCLTECH",
+   "industry": "Information Technology",
+   "ltp": 1372.6,
+   "prev_close": 1380.8,
+   "change_pct": -0.59
+  },
+  {
+   "symbol": "HDFCBANK",
+   "industry": "Financial Services",
+   "ltp": 802.85,
+   "prev_close": 812.3,
+   "change_pct": -1.16
+  },
+  {
+   "symbol": "HDFCLIFE",
+   "industry": "Financial Services",
+   "ltp": 589.3,
+   "prev_close": 597.8,
+   "change_pct": -1.42
+  },
+  {
+   "symbol": "HINDALCO",
+   "industry": "Metals & Mining",
+   "ltp": 946.0,
+   "prev_close": 964.0,
+   "change_pct": -1.87
+  },
+  {
+   "symbol": "HINDUNILVR",
+   "industry": "Fast Moving Consumer Goods",
+   "ltp": 1977.7,
+   "prev_close": 1974.0,
+   "change_pct": 0.19
+  },
+  {
+   "symbol": "ICICIBANK",
+   "industry": "Financial Services",
+   "ltp": 1568.1,
+   "prev_close": 1590.0,
+   "change_pct": -1.38
+  },
+  {
+   "symbol": "ITC",
+   "industry": "Fast Moving Consumer Goods",
+   "ltp": 284.7,
+   "prev_close": 284.05,
+   "change_pct": 0.23
+  },
+  {
+   "symbol": "INFY",
+   "industry": "Information Technology",
+   "ltp": 1139.5,
+   "prev_close": 1151.2,
+   "change_pct": -1.02
+  },
+  {
+   "symbol": "INDIGO",
+   "industry": "Services",
+   "ltp": 5576.6,
+   "prev_close": 5660.0,
+   "change_pct": -1.47
+  },
+  {
+   "symbol": "JSWSTEEL",
+   "industry": "Metals & Mining",
+   "ltp": 1341.6,
+   "prev_close": 1352.1,
+   "change_pct": -0.78
+  },
+  {
+   "symbol": "JIOFIN",
+   "industry": "Financial Services",
+   "ltp": 227.77,
+   "prev_close": 231.2,
+   "change_pct": -1.48
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "industry": "Financial Services",
+   "ltp": 489.05,
+   "prev_close": 490.4,
+   "change_pct": -0.28
+  },
+  {
+   "symbol": "LT",
+   "industry": "Construction",
+   "ltp": 4139.9,
+   "prev_close": 4159.2,
+   "change_pct": -0.46
+  },
+  {
+   "symbol": "M&M",
+   "industry": "Automobile and Auto Components",
+   "ltp": 3344.9,
+   "prev_close": 3399.0,
+   "change_pct": -1.59
+  },
+  {
+   "symbol": "MARUTI",
+   "industry": "Automobile and Auto Components",
+   "ltp": 12893.0,
+   "prev_close": 13024.0,
+   "change_pct": -1.01
+  },
+  {
+   "symbol": "MAXHEALTH",
+   "industry": "Healthcare",
+   "ltp": 945.35,
+   "prev_close": 946.3,
+   "change_pct": -0.1
+  },
+  {
+   "symbol": "NTPC",
+   "industry": "Power",
+   "ltp": 318.1,
+   "prev_close": 323.0,
+   "change_pct": -1.52
+  },
+  {
+   "symbol": "NESTLEIND",
+   "industry": "Fast Moving Consumer Goods",
+   "ltp": 1268.8,
+   "prev_close": 1260.9,
+   "change_pct": 0.63
+  },
+  {
+   "symbol": "ONGC",
+   "industry": "Oil Gas & Consumable Fuels",
+   "ltp": 226.2,
+   "prev_close": 224.5,
+   "change_pct": 0.76
+  },
+  {
+   "symbol": "POWERGRID",
+   "industry": "Power",
+   "ltp": 256.9,
+   "prev_close": 259.45,
+   "change_pct": -0.98
+  },
+  {
+   "symbol": "RELIANCE",
+   "industry": "Oil Gas & Consumable Fuels",
+   "ltp": 1336.2,
+   "prev_close": 1339.7,
+   "change_pct": -0.26
+  },
+  {
+   "symbol": "SBILIFE",
+   "industry": "Financial Services",
+   "ltp": 1785.9,
+   "prev_close": 1819.5,
+   "change_pct": -1.85
+  },
+  {
+   "symbol": "SHRIRAMFIN",
+   "industry": "Financial Services",
+   "ltp": 967.65,
+   "prev_close": 1003.8,
+   "change_pct": -3.6
+  },
+  {
+   "symbol": "SBIN",
+   "industry": "Financial Services",
+   "ltp": 1081.55,
+   "prev_close": 1086.5,
+   "change_pct": -0.46
+  },
+  {
+   "symbol": "SUNPHARMA",
+   "industry": "Healthcare",
+   "ltp": 1871.6,
+   "prev_close": 1885.0,
+   "change_pct": -0.71
+  },
+  {
+   "symbol": "TCS",
+   "industry": "Information Technology",
+   "ltp": 2412.2,
+   "prev_close": 2442.4,
+   "change_pct": -1.24
+  },
+  {
+   "symbol": "TATACONSUM",
+   "industry": "Fast Moving Consumer Goods",
+   "ltp": 1079.6,
+   "prev_close": 1085.3,
+   "change_pct": -0.53
+  },
+  {
+   "symbol": "TMPV",
+   "industry": "Automobile and Auto Components",
+   "ltp": 289.85,
+   "prev_close": 297.25,
+   "change_pct": -2.49
+  },
+  {
+   "symbol": "TATASTEEL",
+   "industry": "Metals & Mining",
+   "ltp": 186.57,
+   "prev_close": 188.0,
+   "change_pct": -0.76
+  },
+  {
+   "symbol": "TECHM",
+   "industry": "Information Technology",
+   "ltp": 1771.3,
+   "prev_close": 1774.0,
+   "change_pct": -0.15
+  },
+  {
+   "symbol": "TITAN",
+   "industry": "Consumer Durables",
+   "ltp": 4849.7,
+   "prev_close": 4921.9,
+   "change_pct": -1.47
+  },
+  {
+   "symbol": "TRENT",
+   "industry": "Consumer Services",
+   "ltp": 3154.6,
+   "prev_close": 3180.0,
+   "change_pct": -0.8
+  },
+  {
+   "symbol": "ULTRACEMCO",
+   "industry": "Construction Materials",
+   "ltp": 12083.0,
+   "prev_close": 12337.0,
+   "change_pct": -2.06
+  }
+ ]
+}

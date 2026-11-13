@@ -1,0 +1,91 @@
+{
+ "index": "BANKNIFTY",
+ "fetched_at": "2026-11-14T02:09:59+05:30",
+ "source": "NSE ind_niftybanklist.csv",
+ "stocks": [
+  {
+   "symbol": "AUBANK",
+   "name": "AU Small Finance Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE949L01017"
+  },
+  {
+   "symbol": "AXISBANK",
+   "name": "Axis Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE238A01034"
+  },
+  {
+   "symbol": "BANKBARODA",
+   "name": "Bank of Baroda",
+   "industry": "Financial Services",
+   "isin": "INE028A01039"
+  },
+  {
+   "symbol": "CANBK",
+   "name": "Canara Bank",
+   "industry": "Financial Services",
+   "isin": "INE476A01022"
+  },
+  {
+   "symbol": "FEDERALBNK",
+   "name": "Federal Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE171A01029"
+  },
+  {
+   "symbol": "HDFCBANK",
+   "name": "HDFC Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE040A01034"
+  },
+  {
+   "symbol": "ICICIBANK",
+   "name": "ICICI Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE090A01021"
+  },
+  {
+   "symbol": "IDFCFIRSTB",
+   "name": "IDFC First Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE092T01019"
+  },
+  {
+   "symbol": "INDUSINDBK",
+   "name": "IndusInd Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE095A01012"
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "name": "Kotak Mahindra Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE237A01036"
+  },
+  {
+   "symbol": "PNB",
+   "name": "Punjab National Bank",
+   "industry": "Financial Services",
+   "isin": "INE160A01022"
+  },
+  {
+   "symbol": "SBIN",
+   "name": "State Bank of India",
+   "industry": "Financial Services",
+   "isin": "INE062A01020"
+  },
+  {
+   "symbol": "UNIONBANK",
+   "name": "Union Bank of India",
+   "industry": "Financial Services",
+   "isin": "INE692A01016"
+  },
+  {
+   "symbol": "YESBANK",
+   "name": "Yes Bank Ltd.",
+   "industry": "Financial Services",
+   "isin": "INE528G01035"
+  }
+ ]
+}

@@ -1,0 +1,1230 @@
+{
+ "fetched_at": "2026-11-14T02:10:18+05:30",
+ "source": "NSE bulk.csv",
+ "deals": [
+  {
+   "date": "13-NOV-2026",
+   "symbol": "AAATECH",
+   "name": "AAA Technologies Limited",
+   "client": "VAIBHAV RAJENDRA DOSHI",
+   "side": "BUY",
+   "qty": "80083",
+   "price": "90.63"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "95589",
+   "price": "941.01"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "109747",
+   "price": "950.14"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "123544",
+   "price": "937.65"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "102709",
+   "price": "943.46"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "AMBER",
+   "name": "Amber Enterprises (I) Ltd",
+   "client": "GRAVITON RESEARCH CAPITAL LLP",
+   "side": "BUY",
+   "qty": "295139",
+   "price": "6620.16"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BCSSL",
+   "name": "Bombay Coated N Specl S L",
+   "client": "PINKAL SHAILESHKUMAR JOGANI",
+   "side": "BUY",
+   "qty": "325000",
+   "price": "81.25"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "465484",
+   "price": "504.63"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "374531",
+   "price": "504.17"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "IRAGE BROKING SERVICES LLP",
+   "side": "BUY",
+   "qty": "268393",
+   "price": "504.16"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "514165",
+   "price": "504.26"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "348480",
+   "price": "505.19"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MATHISYS QUANTCAP LLP",
+   "side": "BUY",
+   "qty": "972049",
+   "price": "260.59"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "HRTI PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "1252333",
+   "price": "262.11"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "825482",
+   "price": "262.01"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "BLITZQUANT RESEARCH LLP",
+   "side": "BUY",
+   "qty": "575572",
+   "price": "262.50"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "1763975",
+   "price": "262.86"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "IRAGE BROKING SERVICES LLP",
+   "side": "BUY",
+   "qty": "758783",
+   "price": "266.85"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "IMC INDIA SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "880204",
+   "price": "263.49"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "2553662",
+   "price": "262.93"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MAHAVEER COMSTOCK TRADIND LLP",
+   "side": "BUY",
+   "qty": "328912",
+   "price": "264.96"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "618010",
+   "price": "263.85"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "J4S FINANCIAL SOLUTIONS LLP",
+   "side": "BUY",
+   "qty": "382738",
+   "price": "263.86"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "CLT RESEARCH TECH PRIVATE LTD",
+   "side": "BUY",
+   "qty": "443080",
+   "price": "268.86"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "J4S FINANCIAL SOLUTIONS LLP",
+   "side": "BUY",
+   "qty": "401038",
+   "price": "264.29"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MARWADI SHARES AND FINANCE LTD.",
+   "side": "BUY",
+   "qty": "318559",
+   "price": "262.05"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "614418",
+   "price": "263.14"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "2441818",
+   "price": "264.06"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "1829458",
+   "price": "263.26"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "PLUTUS WEALTH MANAGEMENT LLP",
+   "side": "BUY",
+   "qty": "3883186",
+   "price": "265.12"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DCI",
+   "name": "DC Infotech and Comun Ltd",
+   "client": "SETU SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "138910",
+   "price": "333.43"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "4404674",
+   "price": "39.50"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "4661724",
+   "price": "39.30"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "2834766",
+   "price": "38.92"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "3184192",
+   "price": "39.43"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "5431286",
+   "price": "39.25"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "GCSL",
+   "name": "Gretex Corporate Services",
+   "client": "MANSUKH SECURITIES & FINANCE LIMITED",
+   "side": "BUY",
+   "qty": "27744",
+   "price": "812.47"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "HGSINDIALT",
+   "name": "HGS (India) Limited",
+   "client": "NEO APEX SHARE BROKING SERVICES LLP",
+   "side": "BUY",
+   "qty": "57600",
+   "price": "214.35"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "139238",
+   "price": "411.68"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "143916",
+   "price": "409.57"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "195815",
+   "price": "412.66"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "PLUTUS WEALTH MANAGEMENT LLP",
+   "side": "BUY",
+   "qty": "120015",
+   "price": "412.25"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "KKJEWELS",
+   "name": "Kabra Jewels Limited",
+   "client": "SARTH AJITBHAI SANTOKI",
+   "side": "BUY",
+   "qty": "55000",
+   "price": "182.00"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "LAMOSAIC",
+   "name": "Lamosaic India Limited",
+   "client": "BHAVIN S KAMANI",
+   "side": "BUY",
+   "qty": "37800",
+   "price": "47.52"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MANAKCOAT",
+   "name": "Man Coat Metal & Ind Ltd",
+   "client": "ARIHANT CAPITAL MARKETS LIMITED",
+   "side": "BUY",
+   "qty": "757724",
+   "price": "176.13"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MARKOLINES",
+   "name": "Markolines Pavement Tec L",
+   "client": "VISTAAR TRADING SERVICE PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "110772",
+   "price": "162.83"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MOS",
+   "name": "Mos Utility Limited",
+   "client": "KULDEEP BHARATBHAI KHACHAR",
+   "side": "BUY",
+   "qty": "1656000",
+   "price": "8.35"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "196633",
+   "price": "784.97"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "HRTI PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "209141",
+   "price": "777.36"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "269224",
+   "price": "784.44"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "261733",
+   "price": "786.96"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MWL",
+   "name": "Mangalam Worldwide Ltd",
+   "client": "BULLPULSE MARKETEDGE PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "2244269",
+   "price": "39.82"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "NECCLTD",
+   "name": "North East Carry Corp Ltd",
+   "client": "PRAJAL BHANDARI",
+   "side": "BUY",
+   "qty": "885561",
+   "price": "22.58"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "PASHUPATI",
+   "name": "Pashupati Cotspin Limited",
+   "client": "NEO APEX SHARE BROKING SERVICES LLP",
+   "side": "BUY",
+   "qty": "1800000",
+   "price": "35.15"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "SABAR",
+   "name": "Sabar Flex India Limited",
+   "client": "ALEGULA MADHU BABU",
+   "side": "BUY",
+   "qty": "410000",
+   "price": "9.24"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "SSRETAIL",
+   "name": "SS Retail Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "405200",
+   "price": "734.46"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "STLNETWORK",
+   "name": "STL Networks Limited",
+   "client": "RAMDOOT REALTORS PVT LTD",
+   "side": "BUY",
+   "qty": "2572345",
+   "price": "46.12"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "STYLEBAAZA",
+   "name": "Baazar Style Retail Ltd",
+   "client": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "381699",
+   "price": "455.31"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TDPOWERSYS",
+   "name": "TD Power Systems Ltd.",
+   "client": "HRTI PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "1589792",
+   "price": "660.88"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TDPOWERSYS",
+   "name": "TD Power Systems Ltd.",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "2981475",
+   "price": "663.10"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TDPOWERSYS",
+   "name": "TD Power Systems Ltd.",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "2178340",
+   "price": "664.04"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TECHNOCRAF",
+   "name": "Technocraft Ventures Ltd",
+   "client": "ACME CAPITAL MARKET LIMITED",
+   "side": "BUY",
+   "qty": "330591",
+   "price": "502.24"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TEXINFRA",
+   "name": "Texmaco Infra & Holdg Ltd",
+   "client": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "826455",
+   "price": "123.02"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "URBAN-RE",
+   "name": "Urban Enviro Waste Ltd",
+   "client": "RAMESH KHUSHALCHAND MANTRI",
+   "side": "BUY",
+   "qty": "61600",
+   "price": "12.05"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "URBAN-RE",
+   "name": "Urban Enviro Waste Ltd",
+   "client": "DEVENDRA BANKATLAL RATHI",
+   "side": "BUY",
+   "qty": "72000",
+   "price": "12.05"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "BUY",
+   "qty": "1909220",
+   "price": "173.77"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "F3 ADVISORS PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "2173610",
+   "price": "176.01"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "AAATECH",
+   "name": "AAA Technologies Limited",
+   "client": "VAIBHAV RAJENDRA DOSHI",
+   "side": "SELL",
+   "qty": "80083",
+   "price": "89.53"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "109747",
+   "price": "951.83"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "95558",
+   "price": "941.65"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "102709",
+   "price": "943.86"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "ALICON",
+   "name": "Alicon Castalloy Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "123544",
+   "price": "937.74"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "AMBER",
+   "name": "Amber Enterprises (I) Ltd",
+   "client": "GRAVITON RESEARCH CAPITAL LLP",
+   "side": "SELL",
+   "qty": "298240",
+   "price": "6635.72"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "514165",
+   "price": "504.88"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "IRAGE BROKING SERVICES LLP",
+   "side": "SELL",
+   "qty": "213212",
+   "price": "503.58"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "373880",
+   "price": "504.66"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "348480",
+   "price": "505.48"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BFUTILITIE",
+   "name": "BF Utilities Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "465484",
+   "price": "505.05"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2553662",
+   "price": "263.05"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MAHAVEER COMSTOCK TRADIND LLP",
+   "side": "SELL",
+   "qty": "308912",
+   "price": "264.63"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "618010",
+   "price": "264.02"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2441818",
+   "price": "264.40"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "J4S FINANCIAL SOLUTIONS LLP",
+   "side": "SELL",
+   "qty": "382738",
+   "price": "264.01"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "CLT RESEARCH TECH PRIVATE LTD",
+   "side": "SELL",
+   "qty": "443080",
+   "price": "268.96"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "BLITZQUANT RESEARCH LLP",
+   "side": "SELL",
+   "qty": "575572",
+   "price": "262.61"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "J4S FINANCIAL SOLUTIONS LLP",
+   "side": "SELL",
+   "qty": "401038",
+   "price": "264.36"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "DIPAN MEHTA COMMODITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "606418",
+   "price": "263.17"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MARWADI SHARES AND FINANCE LTD.",
+   "side": "SELL",
+   "qty": "300257",
+   "price": "263.60"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "PLUTUS WEALTH MANAGEMENT LLP",
+   "side": "SELL",
+   "qty": "3883186",
+   "price": "265.23"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "IMC INDIA SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "766014",
+   "price": "265.66"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "1833792",
+   "price": "263.39"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "JUMP TRADING FINANCIAL INDIA PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "825482",
+   "price": "259.51"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "HRTI PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "899688",
+   "price": "259.71"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "MATHISYS QUANTCAP LLP",
+   "side": "SELL",
+   "qty": "961950",
+   "price": "260.50"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "IRAGE BROKING SERVICES LLP",
+   "side": "SELL",
+   "qty": "547258",
+   "price": "265.25"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "BLSPOLY",
+   "name": "BLS Polymers Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "1818564",
+   "price": "261.87"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "4653122",
+   "price": "39.33"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "2831929",
+   "price": "38.95"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "NK SECURITIES RESEARCH PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "3184192",
+   "price": "39.46"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "4404674",
+   "price": "39.52"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "DHANBANK",
+   "name": "Dhanlaxmi Bank Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "5431286",
+   "price": "39.28"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "GCSL",
+   "name": "Gretex Corporate Services",
+   "client": "MANSUKH SECURITIES & FINANCE LIMITED",
+   "side": "SELL",
+   "qty": "135488",
+   "price": "819.55"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "IIFLCAPS",
+   "name": "IIFL CAPITAL SERVICES LTD",
+   "client": "ALPHA ALTERNATIVES FINANCIAL SERVICES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2369139",
+   "price": "354.74"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "IIFLCAPS",
+   "name": "IIFL CAPITAL SERVICES LTD",
+   "client": "NEO TREASURY PLUS FUND",
+   "side": "SELL",
+   "qty": "1865000",
+   "price": "355.78"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "IIFLCAPS",
+   "name": "IIFL CAPITAL SERVICES LTD",
+   "client": "ARVESTA FINANCIAL SERVICES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2081589",
+   "price": "354.22"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "139641",
+   "price": "412.30"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "PLUTUS WEALTH MANAGEMENT LLP",
+   "side": "SELL",
+   "qty": "120015",
+   "price": "412.32"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "195815",
+   "price": "413.14"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "JARO",
+   "name": "Jaro Ins of Tec Mg N Re L",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "148117",
+   "price": "412.33"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "LAMOSAIC",
+   "name": "Lamosaic India Limited",
+   "client": "BHAVIN S KAMANI",
+   "side": "SELL",
+   "qty": "70200",
+   "price": "47.00"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MANAKCOAT",
+   "name": "Man Coat Metal & Ind Ltd",
+   "client": "ARIHANT CAPITAL MARKETS LIMITED",
+   "side": "SELL",
+   "qty": "920999",
+   "price": "177.21"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MANAKCOAT",
+   "name": "Man Coat Metal & Ind Ltd",
+   "client": "TIGER STRATEGIES FUND -I",
+   "side": "SELL",
+   "qty": "600000",
+   "price": "175.04"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MARKOLINES",
+   "name": "Markolines Pavement Tec L",
+   "client": "VISTAAR TRADING SERVICE PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "111524",
+   "price": "162.91"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MAXENGS",
+   "name": "Maxwell Engineering Sol L",
+   "client": "NEO APEX SHARE BROKING SERVICES LLP",
+   "side": "SELL",
+   "qty": "85600",
+   "price": "276.06"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MEESHO",
+   "name": "Meesho Limited",
+   "client": "SVF II MEERKAT (DE) LLC",
+   "side": "SELL",
+   "qty": "76400000",
+   "price": "246.75"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "ALPHAGREP SECURITIES PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "261733",
+   "price": "787.13"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "JUNOMONETA FINSOL PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "196892",
+   "price": "785.13"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "HRTI PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "176515",
+   "price": "781.27"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MVELECTRO",
+   "name": "MV Electrosystems Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "277518",
+   "price": "783.64"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "MWL",
+   "name": "Mangalam Worldwide Ltd",
+   "client": "BULLPULSE MARKETEDGE PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2244269",
+   "price": "40.27"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "NECCLTD",
+   "name": "North East Carry Corp Ltd",
+   "client": "PRAJAL BHANDARI",
+   "side": "SELL",
+   "qty": "232233",
+   "price": "22.50"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "PASHUPATI",
+   "name": "Pashupati Cotspin Limited",
+   "client": "NEO APEX SHARE BROKING SERVICES LLP",
+   "side": "SELL",
+   "qty": "1800000",
+   "price": "35.14"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "PROLIFE",
+   "name": "Prolife Industries Ltd",
+   "client": "GYANENDRA KUMAR",
+   "side": "SELL",
+   "qty": "26000",
+   "price": "68.59"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "RALLIS",
+   "name": "Rallis India Ltd.",
+   "client": "ASK INVESTMENT MANAGERS LIMITED",
+   "side": "SELL",
+   "qty": "1279684",
+   "price": "189.42"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "SABAR",
+   "name": "Sabar Flex India Limited",
+   "client": "KUNJIT MAHESHBHAI PATEL",
+   "side": "SELL",
+   "qty": "400000",
+   "price": "9.25"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "SSRETAIL",
+   "name": "SS Retail Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "407852",
+   "price": "731.86"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "STLNETWORK",
+   "name": "STL Networks Limited",
+   "client": "RAMDOOT REALTORS PVT LTD",
+   "side": "SELL",
+   "qty": "2394383",
+   "price": "46.25"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "STYLEBAAZA",
+   "name": "Baazar Style Retail Ltd",
+   "client": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "381699",
+   "price": "466.95"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TDPOWERSYS",
+   "name": "TD Power Systems Ltd.",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "2973851",
+   "price": "660.90"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TDPOWERSYS",
+   "name": "TD Power Systems Ltd.",
+   "client": "HRTI PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "1760496",
+   "price": "663.54"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TDPOWERSYS",
+   "name": "TD Power Systems Ltd.",
+   "client": "MICROCURVES TRADING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2178340",
+   "price": "664.54"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TECHNOCRAF",
+   "name": "Technocraft Ventures Ltd",
+   "client": "ACME CAPITAL MARKET LIMITED",
+   "side": "SELL",
+   "qty": "330591",
+   "price": "504.12"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TEXINFRA",
+   "name": "Texmaco Infra & Holdg Ltd",
+   "client": "ACQUARIO WEALTH ADVISORS LLP",
+   "side": "SELL",
+   "qty": "918078",
+   "price": "123.03"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "TEXINFRA",
+   "name": "Texmaco Infra & Holdg Ltd",
+   "client": "MANSI SHARE AND STOCK BROKING PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "826455",
+   "price": "123.83"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "QE SECURITIES LLP",
+   "side": "SELL",
+   "qty": "1779009",
+   "price": "173.30"
+  },
+  {
+   "date": "13-NOV-2026",
+   "symbol": "V2RETAIL",
+   "name": "V2 Retail Limited",
+   "client": "F3 ADVISORS PRIVATE LIMITED",
+   "side": "SELL",
+   "qty": "2157065",
+   "price": "175.94"
+  }
+ ]
+}
