@@ -1,0 +1,51 @@
+{
+ "fetched_at": "2026-11-21T03:04:09+05:30",
+ "source": "NSE block.csv",
+ "deals": [
+  {
+   "date": "20-NOV-2026",
+   "symbol": "GALLANTT",
+   "name": "Gallantt Ispat Limited",
+   "client": "SHREE SURABHI FLOUR MILLS PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "550000",
+   "price": "523.00"
+  },
+  {
+   "date": "20-NOV-2026",
+   "symbol": "GALLANTT",
+   "name": "Gallantt Ispat Limited",
+   "client": "SURYALAXMI INFRACON PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "1060292",
+   "price": "524.41"
+  },
+  {
+   "date": "20-NOV-2026",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "RAJESH BHASKARAN NAIR",
+   "side": "BUY",
+   "qty": "380750",
+   "price": "657.00"
+  },
+  {
+   "date": "20-NOV-2026",
+   "symbol": "GALLANTT",
+   "name": "Gallantt Ispat Limited",
+   "client": "DINESH R AGARWAL",
+   "side": "SELL",
+   "qty": "1610292",
+   "price": "523.93"
+  },
+  {
+   "date": "20-NOV-2026",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "AARABHI PARTNERS CONSULTANTS LLP",
+   "side": "SELL",
+   "qty": "380750",
+   "price": "657.00"
+  }
+ ]
+}

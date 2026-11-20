@@ -1,0 +1,536 @@
+{
+ "fetched_at": "2026-11-21T03:04:09+05:30",
+ "source": "NSE participant-wise OI (nsearchives)",
+ "days": [
+  {
+   "date": "2026-11-06",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 180828,
+     "fut_idx_short": 97047,
+     "fut_stk_long": 3139917,
+     "fut_stk_short": 320512,
+     "opt_idx_call_long": 2906186,
+     "opt_idx_put_long": 4070036,
+     "opt_idx_call_short": 2894792,
+     "opt_idx_put_short": 4474207,
+     "total_long": 13037089,
+     "total_short": 9878241
+    },
+    "DII": {
+     "fut_idx_long": 54004,
+     "fut_idx_short": 18468,
+     "fut_stk_long": 330049,
+     "fut_stk_short": 4393321,
+     "opt_idx_call_long": 10818,
+     "opt_idx_put_long": 104950,
+     "opt_idx_call_short": 553,
+     "opt_idx_put_short": 1003,
+     "total_long": 543798,
+     "total_short": 4831874
+    },
+    "FII": {
+     "fut_idx_long": 48656,
+     "fut_idx_short": 149072,
+     "fut_stk_long": 3605434,
+     "fut_stk_short": 2526231,
+     "opt_idx_call_long": 861276,
+     "opt_idx_put_long": 1379216,
+     "opt_idx_call_short": 988900,
+     "opt_idx_put_short": 929475,
+     "total_long": 6591329,
+     "total_short": 5256468
+    },
+    "PRO": {
+     "fut_idx_long": 29551,
+     "fut_idx_short": 48452,
+     "fut_stk_long": 684647,
+     "fut_stk_short": 519983,
+     "opt_idx_call_long": 1141859,
+     "opt_idx_put_long": 1529740,
+     "opt_idx_call_short": 1035893,
+     "opt_idx_put_short": 1679258,
+     "total_long": 5597447,
+     "total_short": 5803080
+    }
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 182812,
+     "fut_idx_short": 102053,
+     "fut_stk_long": 3181091,
+     "fut_stk_short": 341804,
+     "opt_idx_call_long": 2112701,
+     "opt_idx_put_long": 2426932,
+     "opt_idx_call_short": 2081906,
+     "opt_idx_put_short": 2810271,
+     "total_long": 10922866,
+     "total_short": 7530414
+    },
+    "DII": {
+     "fut_idx_long": 55291,
+     "fut_idx_short": 24834,
+     "fut_stk_long": 339601,
+     "fut_stk_short": 4355663,
+     "opt_idx_call_long": 13893,
+     "opt_idx_put_long": 104232,
+     "opt_idx_call_short": 300,
+     "opt_idx_put_short": 0,
+     "total_long": 557182,
+     "total_short": 4837534
+    },
+    "FII": {
+     "fut_idx_long": 52382,
+     "fut_idx_short": 143123,
+     "fut_stk_long": 3580740,
+     "fut_stk_short": 2545989,
+     "opt_idx_call_long": 606678,
+     "opt_idx_put_long": 969672,
+     "opt_idx_call_short": 718631,
+     "opt_idx_put_short": 582033,
+     "total_long": 5924644,
+     "total_short": 4696514
+    },
+    "PRO": {
+     "fut_idx_long": 28827,
+     "fut_idx_short": 49302,
+     "fut_stk_long": 683120,
+     "fut_stk_short": 541096,
+     "opt_idx_call_long": 806059,
+     "opt_idx_put_long": 857050,
+     "opt_idx_call_short": 738495,
+     "opt_idx_put_short": 965582,
+     "total_long": 4643367,
+     "total_short": 4983597
+    }
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 172162,
+     "fut_idx_short": 105154,
+     "fut_stk_long": 3139266,
+     "fut_stk_short": 347050,
+     "opt_idx_call_long": 3045743,
+     "opt_idx_put_long": 2722311,
+     "opt_idx_call_short": 2706602,
+     "opt_idx_put_short": 3140961,
+     "total_long": 12279424,
+     "total_short": 8569956
+    },
+    "DII": {
+     "fut_idx_long": 54376,
+     "fut_idx_short": 27224,
+     "fut_stk_long": 340835,
+     "fut_stk_short": 4329625,
+     "opt_idx_call_long": 2610,
+     "opt_idx_put_long": 107042,
+     "opt_idx_call_short": 1550,
+     "opt_idx_put_short": 1200,
+     "total_long": 548946,
+     "total_short": 4828392
+    },
+    "FII": {
+     "fut_idx_long": 57226,
+     "fut_idx_short": 127639,
+     "fut_stk_long": 3575532,
+     "fut_stk_short": 2540154,
+     "opt_idx_call_long": 722656,
+     "opt_idx_put_long": 1094827,
+     "opt_idx_call_short": 958257,
+     "opt_idx_put_short": 647495,
+     "total_long": 6195764,
+     "total_short": 5022700
+    },
+    "PRO": {
+     "fut_idx_long": 26450,
+     "fut_idx_short": 50197,
+     "fut_stk_long": 704626,
+     "fut_stk_short": 543430,
+     "opt_idx_call_long": 1052450,
+     "opt_idx_put_long": 954754,
+     "opt_idx_call_short": 1157051,
+     "opt_idx_put_short": 1089278,
+     "total_long": 5104137,
+     "total_short": 5707224
+    }
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 172115,
+     "fut_idx_short": 114170,
+     "fut_stk_long": 3162126,
+     "fut_stk_short": 376004,
+     "opt_idx_call_long": 3402088,
+     "opt_idx_put_long": 3246842,
+     "opt_idx_call_short": 3254568,
+     "opt_idx_put_short": 3635977,
+     "total_long": 13392714,
+     "total_short": 9743422
+    },
+    "DII": {
+     "fut_idx_long": 54372,
+     "fut_idx_short": 27224,
+     "fut_stk_long": 344641,
+     "fut_stk_short": 4302204,
+     "opt_idx_call_long": 2661,
+     "opt_idx_put_long": 107306,
+     "opt_idx_call_short": 1600,
+     "opt_idx_put_short": 1200,
+     "total_long": 551969,
+     "total_short": 4807423
+    },
+    "FII": {
+     "fut_idx_long": 70744,
+     "fut_idx_short": 120463,
+     "fut_stk_long": 3576742,
+     "fut_stk_short": 2551402,
+     "opt_idx_call_long": 774429,
+     "opt_idx_put_long": 1097979,
+     "opt_idx_call_short": 982538,
+     "opt_idx_put_short": 719084,
+     "total_long": 6267420,
+     "total_short": 5149111
+    },
+    "PRO": {
+     "fut_idx_long": 25432,
+     "fut_idx_short": 60806,
+     "fut_stk_long": 728203,
+     "fut_stk_short": 582102,
+     "opt_idx_call_long": 1201859,
+     "opt_idx_put_long": 1142747,
+     "opt_idx_call_short": 1142331,
+     "opt_idx_put_short": 1238613,
+     "total_long": 5529642,
+     "total_short": 6041789
+    }
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 172887,
+     "fut_idx_short": 110311,
+     "fut_stk_long": 3183726,
+     "fut_stk_short": 382317,
+     "opt_idx_call_long": 3780052,
+     "opt_idx_put_long": 3498034,
+     "opt_idx_call_short": 3648876,
+     "opt_idx_put_short": 3942456,
+     "total_long": 14158760,
+     "total_short": 10526939
+    },
+    "DII": {
+     "fut_idx_long": 54379,
+     "fut_idx_short": 28098,
+     "fut_stk_long": 350882,
+     "fut_stk_short": 4303788,
+     "opt_idx_call_long": 2363,
+     "opt_idx_put_long": 104506,
+     "opt_idx_call_short": 1350,
+     "opt_idx_put_short": 1200,
+     "total_long": 555348,
+     "total_short": 4828807
+    },
+    "FII": {
+     "fut_idx_long": 62546,
+     "fut_idx_short": 118466,
+     "fut_stk_long": 3586466,
+     "fut_stk_short": 2585271,
+     "opt_idx_call_long": 755197,
+     "opt_idx_put_long": 1137053,
+     "opt_idx_call_short": 972780,
+     "opt_idx_put_short": 749988,
+     "total_long": 6298430,
+     "total_short": 5212472
+    },
+    "PRO": {
+     "fut_idx_long": 25143,
+     "fut_idx_short": 58080,
+     "fut_stk_long": 746396,
+     "fut_stk_short": 596094,
+     "opt_idx_call_long": 1321341,
+     "opt_idx_put_long": 1162085,
+     "opt_idx_call_short": 1235947,
+     "opt_idx_put_short": 1208034,
+     "total_long": 5737715,
+     "total_short": 6182034
+    }
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 171404,
+     "fut_idx_short": 113020,
+     "fut_stk_long": 3181356,
+     "fut_stk_short": 387543,
+     "opt_idx_call_long": 3911801,
+     "opt_idx_put_long": 3944428,
+     "opt_idx_call_short": 3931391,
+     "opt_idx_put_short": 4351577,
+     "total_long": 14833373,
+     "total_short": 11286635
+    },
+    "DII": {
+     "fut_idx_long": 52851,
+     "fut_idx_short": 30387,
+     "fut_stk_long": 359455,
+     "fut_stk_short": 4287077,
+     "opt_idx_call_long": 2772,
+     "opt_idx_put_long": 104785,
+     "opt_idx_call_short": 1400,
+     "opt_idx_put_short": 1000,
+     "total_long": 563495,
+     "total_short": 4828507
+    },
+    "FII": {
+     "fut_idx_long": 61039,
+     "fut_idx_short": 117726,
+     "fut_stk_long": 3601255,
+     "fut_stk_short": 2623369,
+     "opt_idx_call_long": 819094,
+     "opt_idx_put_long": 1140887,
+     "opt_idx_call_short": 1005743,
+     "opt_idx_put_short": 837673,
+     "total_long": 6394746,
+     "total_short": 5401070
+    },
+    "PRO": {
+     "fut_idx_long": 25182,
+     "fut_idx_short": 49343,
+     "fut_stk_long": 776090,
+     "fut_stk_short": 620167,
+     "opt_idx_call_long": 1440484,
+     "opt_idx_put_long": 1283514,
+     "opt_idx_call_short": 1235616,
+     "opt_idx_put_short": 1283365,
+     "total_long": 6051337,
+     "total_short": 6326739
+    }
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 170907,
+     "fut_idx_short": 115613,
+     "fut_stk_long": 3180794,
+     "fut_stk_short": 391846,
+     "opt_idx_call_long": 2383850,
+     "opt_idx_put_long": 2546860,
+     "opt_idx_call_short": 2360166,
+     "opt_idx_put_short": 2891975,
+     "total_long": 11749181,
+     "total_short": 8263239
+    },
+    "DII": {
+     "fut_idx_long": 53126,
+     "fut_idx_short": 30387,
+     "fut_stk_long": 373203,
+     "fut_stk_short": 4296063,
+     "opt_idx_call_long": 5214,
+     "opt_idx_put_long": 114354,
+     "opt_idx_call_short": 350,
+     "opt_idx_put_short": 1200,
+     "total_long": 606720,
+     "total_short": 4840799
+    },
+    "FII": {
+     "fut_idx_long": 65568,
+     "fut_idx_short": 130691,
+     "fut_stk_long": 3629602,
+     "fut_stk_short": 2645357,
+     "opt_idx_call_long": 657681,
+     "opt_idx_put_long": 1019332,
+     "opt_idx_call_short": 774511,
+     "opt_idx_put_short": 649719,
+     "total_long": 6157158,
+     "total_short": 5025104
+    },
+    "PRO": {
+     "fut_idx_long": 28628,
+     "fut_idx_short": 41538,
+     "fut_stk_long": 807203,
+     "fut_stk_short": 657536,
+     "opt_idx_call_long": 829209,
+     "opt_idx_put_long": 780407,
+     "opt_idx_call_short": 740927,
+     "opt_idx_put_short": 918059,
+     "total_long": 5066667,
+     "total_short": 5450583
+    }
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 171952,
+     "fut_idx_short": 112281,
+     "fut_stk_long": 3175588,
+     "fut_stk_short": 371209,
+     "opt_idx_call_long": 3194114,
+     "opt_idx_put_long": 2748136,
+     "opt_idx_call_short": 3026425,
+     "opt_idx_put_short": 3220626,
+     "total_long": 12820732,
+     "total_short": 9252447
+    },
+    "DII": {
+     "fut_idx_long": 53094,
+     "fut_idx_short": 30180,
+     "fut_stk_long": 388791,
+     "fut_stk_short": 4290639,
+     "opt_idx_call_long": 5984,
+     "opt_idx_put_long": 115329,
+     "opt_idx_call_short": 1450,
+     "opt_idx_put_short": 1200,
+     "total_long": 623420,
+     "total_short": 4843096
+    },
+    "FII": {
+     "fut_idx_long": 65342,
+     "fut_idx_short": 136012,
+     "fut_stk_long": 3638688,
+     "fut_stk_short": 2680461,
+     "opt_idx_call_long": 713253,
+     "opt_idx_put_long": 1039485,
+     "opt_idx_call_short": 909749,
+     "opt_idx_put_short": 665286,
+     "total_long": 6251703,
+     "total_short": 5236896
+    },
+    "PRO": {
+     "fut_idx_long": 31811,
+     "fut_idx_short": 43726,
+     "fut_stk_long": 772252,
+     "fut_stk_short": 633010,
+     "opt_idx_call_long": 1067955,
+     "opt_idx_put_long": 951076,
+     "opt_idx_call_short": 1043682,
+     "opt_idx_put_short": 966914,
+     "total_long": 5523273,
+     "total_short": 5886689
+    }
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 164593,
+     "fut_idx_short": 113569,
+     "fut_stk_long": 3160266,
+     "fut_stk_short": 368203,
+     "opt_idx_call_long": 2931072,
+     "opt_idx_put_long": 3757162,
+     "opt_idx_call_short": 2961230,
+     "opt_idx_put_short": 4086239,
+     "total_long": 13429118,
+     "total_short": 10021311
+    },
+    "DII": {
+     "fut_idx_long": 52737,
+     "fut_idx_short": 29971,
+     "fut_stk_long": 403233,
+     "fut_stk_short": 4335347,
+     "opt_idx_call_long": 5514,
+     "opt_idx_put_long": 104179,
+     "opt_idx_call_short": 1200,
+     "opt_idx_put_short": 200,
+     "total_long": 621065,
+     "total_short": 4888233
+    },
+    "FII": {
+     "fut_idx_long": 73516,
+     "fut_idx_short": 141763,
+     "fut_stk_long": 3663262,
+     "fut_stk_short": 2671711,
+     "opt_idx_call_long": 765216,
+     "opt_idx_put_long": 1220608,
+     "opt_idx_call_short": 865157,
+     "opt_idx_put_short": 888232,
+     "total_long": 6525843,
+     "total_short": 5419305
+    },
+    "PRO": {
+     "fut_idx_long": 38087,
+     "fut_idx_short": 43630,
+     "fut_stk_long": 761421,
+     "fut_stk_short": 612921,
+     "opt_idx_call_long": 1066754,
+     "opt_idx_put_long": 1233815,
+     "opt_idx_call_short": 940970,
+     "opt_idx_put_short": 1341094,
+     "total_long": 5814927,
+     "total_short": 6062104
+    }
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "participants": {
+    "CLIENT": {
+     "fut_idx_long": 155681,
+     "fut_idx_short": 114419,
+     "fut_stk_long": 3127092,
+     "fut_stk_short": 371549,
+     "opt_idx_call_long": 3072591,
+     "opt_idx_put_long": 4103061,
+     "opt_idx_call_short": 3106912,
+     "opt_idx_put_short": 4591567,
+     "total_long": 13589474,
+     "total_short": 10578356
+    },
+    "DII": {
+     "fut_idx_long": 52405,
+     "fut_idx_short": 35254,
+     "fut_stk_long": 460150,
+     "fut_stk_short": 4352471,
+     "opt_idx_call_long": 6837,
+     "opt_idx_put_long": 99777,
+     "opt_idx_call_short": 2290,
+     "opt_idx_put_short": 1700,
+     "total_long": 668451,
+     "total_short": 4904416
+    },
+    "FII": {
+     "fut_idx_long": 75864,
+     "fut_idx_short": 146318,
+     "fut_stk_long": 3673303,
+     "fut_stk_short": 2671683,
+     "opt_idx_call_long": 882959,
+     "opt_idx_put_long": 1425970,
+     "opt_idx_call_short": 992566,
+     "opt_idx_put_short": 1041238,
+     "total_long": 6804437,
+     "total_short": 5636651
+    },
+    "PRO": {
+     "fut_idx_long": 53026,
+     "fut_idx_short": 40985,
+     "fut_stk_long": 742436,
+     "fut_stk_short": 607278,
+     "opt_idx_call_long": 1179262,
+     "opt_idx_put_long": 1515473,
+     "opt_idx_call_short": 1039881,
+     "opt_idx_put_short": 1509777,
+     "total_long": 6184287,
+     "total_short": 6127227
+    }
+   }
+  }
+ ]
+}

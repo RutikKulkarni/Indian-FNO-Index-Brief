@@ -1,0 +1,56 @@
+{
+ "fetched_at": "2026-11-20T14:50:50+05:30",
+ "source": "Upstox API (analytics token)",
+ "india_vix": 17.33,
+ "india_vix_prev_close": 16.11,
+ "resolved_keys": {
+  "NIFTY": "NSE_INDEX|Nifty 50",
+  "BANKNIFTY": "NSE_INDEX|Nifty Bank",
+  "FINNIFTY": "NSE_INDEX|Nifty Fin Service",
+  "MIDCPNIFTY": "NSE_INDEX|NIFTY MID SELECT",
+  "NIFTYNXT50": "NSE_INDEX|Nifty Next 50",
+  "SENSEX": "BSE_INDEX|SENSEX",
+  "BANKEX": "BSE_INDEX|BANKEX"
+ },
+ "status": {
+  "BANKNIFTY": "ok (213 strikes, expiry 2026-11-23)",
+  "NIFTY": "ok (158 strikes, expiry 2026-11-23)",
+  "SENSEX": "ok (236 strikes, expiry 2026-11-26)"
+ },
+ "burst": {
+  "snapshots": 10,
+  "interval_sec": 30.0
+ },
+ "log": [
+  "2026-11-20T14:46:20+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:46:20+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:46:20+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:46:50+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:46:50+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:46:50+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:47:20+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:47:20+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:47:20+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:47:50+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:47:50+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:47:50+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:48:20+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:48:20+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:48:20+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:48:50+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:48:50+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:48:50+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:49:20+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:49:20+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:49:20+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:49:50+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:49:50+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:49:50+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:50:20+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:50:20+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:50:20+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)",
+  "2026-11-20T14:50:50+05:30 BANKNIFTY: ok (213 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:50:50+05:30 NIFTY: ok (158 strikes, expiry 2026-11-23)",
+  "2026-11-20T14:50:50+05:30 SENSEX: ok (236 strikes, expiry 2026-11-26)"
+ ]
+}
