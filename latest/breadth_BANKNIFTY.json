@@ -1,0 +1,108 @@
+{
+ "index": "BANKNIFTY",
+ "fetched_at": "2026-11-27T14:51:20+05:30",
+ "source": "Upstox API",
+ "advancers": 6,
+ "decliners": 8,
+ "unchanged": 0,
+ "stocks": [
+  {
+   "symbol": "AUBANK",
+   "industry": "Financial Services",
+   "ltp": 980.9,
+   "prev_close": 982.0,
+   "change_pct": -0.11
+  },
+  {
+   "symbol": "AXISBANK",
+   "industry": "Financial Services",
+   "ltp": 1382.0,
+   "prev_close": 1408.0,
+   "change_pct": -1.85
+  },
+  {
+   "symbol": "BANKBARODA",
+   "industry": "Financial Services",
+   "ltp": 276.59,
+   "prev_close": 274.61,
+   "change_pct": 0.72
+  },
+  {
+   "symbol": "CANBK",
+   "industry": "Financial Services",
+   "ltp": 131.54,
+   "prev_close": 132.4,
+   "change_pct": -0.65
+  },
+  {
+   "symbol": "FEDERALBNK",
+   "industry": "Financial Services",
+   "ltp": 358.75,
+   "prev_close": 356.85,
+   "change_pct": 0.53
+  },
+  {
+   "symbol": "HDFCBANK",
+   "industry": "Financial Services",
+   "ltp": 863.05,
+   "prev_close": 862.0,
+   "change_pct": 0.12
+  },
+  {
+   "symbol": "ICICIBANK",
+   "industry": "Financial Services",
+   "ltp": 1591.3,
+   "prev_close": 1611.0,
+   "change_pct": -1.22
+  },
+  {
+   "symbol": "IDFCFIRSTB",
+   "industry": "Financial Services",
+   "ltp": 86.96,
+   "prev_close": 86.71,
+   "change_pct": 0.29
+  },
+  {
+   "symbol": "INDUSINDBK",
+   "industry": "Financial Services",
+   "ltp": 959.5,
+   "prev_close": 966.1,
+   "change_pct": -0.68
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "industry": "Financial Services",
+   "ltp": 501.3,
+   "prev_close": 509.95,
+   "change_pct": -1.7
+  },
+  {
+   "symbol": "PNB",
+   "industry": "Financial Services",
+   "ltp": 146.53,
+   "prev_close": 147.5,
+   "change_pct": -0.66
+  },
+  {
+   "symbol": "SBIN",
+   "industry": "Financial Services",
+   "ltp": 1126.65,
+   "prev_close": 1136.65,
+   "change_pct": -0.88
+  },
+  {
+   "symbol": "UNIONBANK",
+   "industry": "Financial Services",
+   "ltp": 210.91,
+   "prev_close": 210.2,
+   "change_pct": 0.34
+  },
+  {
+   "symbol": "YESBANK",
+   "industry": "Financial Services",
+   "ltp": 17.81,
+   "prev_close": 17.68,
+   "change_pct": 0.74
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "fetched_at": "2026-11-28T03:52:27+05:30",
+ "source": "NSE block.csv",
+ "deals": [
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "MORGAN STANLEY ASIA SINGAPORE PTE",
+   "side": "BUY",
+   "qty": "599521",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "STALLION ASSET PRIVATE LIMITED",
+   "side": "BUY",
+   "qty": "1198522",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "OLD BRIDGE MUTUAL FUND",
+   "side": "BUY",
+   "qty": "2400000",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "SUSQUEHANNA PACIFIC PTY LTD",
+   "side": "BUY",
+   "qty": "599521",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "ASHOKA INDIA EQUITY INVESTMENT TRUST PLC",
+   "side": "BUY",
+   "qty": "599521",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "CITIGROUP GLOBAL MARKETS SINGAPORE PTE LIMITED",
+   "side": "BUY",
+   "qty": "719425",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "WHITEOAK CAPITAL MUTUAL FUND",
+   "side": "BUY",
+   "qty": "599521",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "RAJESH BHASKARAN NAIR",
+   "side": "BUY",
+   "qty": "373150",
+   "price": "670.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "BCP ASIA II TOPCO PTE . LTD .",
+   "side": "SELL",
+   "qty": "3358015",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "IGIL",
+   "name": "Intl Gemological Inst Ltd",
+   "client": "BCP ASIA II TOPCO PTE. LTD.",
+   "side": "SELL",
+   "qty": "3358016",
+   "price": "417.00"
+  },
+  {
+   "date": "27-NOV-2026",
+   "symbol": "INDGN",
+   "name": "Indegene Limited",
+   "client": "AARABHI PARTNERS CONSULTANTS LLP",
+   "side": "SELL",
+   "qty": "373150",
+   "price": "670.00"
+  }
+ ]
+}

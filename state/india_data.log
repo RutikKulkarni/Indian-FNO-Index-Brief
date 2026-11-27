@@ -1,0 +1,400 @@
+breadth BANKNIFTY: 14/14 quoted
+news: 24 items
+alerts: 0 fired
+--- 2026-11-18T10:50:32+05:30 intraday breadth news alerts
+intraday NIFTY: 95 candles
+intraday BANKNIFTY: 94 candles
+intraday SENSEX: 95 candles
+intraday FINNIFTY: 95 candles
+intraday MIDCPNIFTY: 95 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 24 items
+alerts: 0 fired
+--- 2026-11-18T12:52:35+05:30 intraday breadth news alerts
+intraday NIFTY: 217 candles
+intraday BANKNIFTY: 217 candles
+intraday SENSEX: 217 candles
+intraday FINNIFTY: 217 candles
+intraday MIDCPNIFTY: 217 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 25 items
+alerts: 0 fired
+--- 2026-11-18T14:50:49+05:30 intraday breadth news alerts
+intraday NIFTY: 335 candles
+intraday BANKNIFTY: 335 candles
+intraday SENSEX: 335 candles
+intraday FINNIFTY: 335 candles
+intraday MIDCPNIFTY: 335 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 26 items
+alerts: 0 fired
+--- 2026-11-19T03:07:19+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 118
+smartmoney block deals: 0
+--- 2026-11-19T08:48:10+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+[warn] history NIFTY: The read operation timed out
+history BANKNIFTY: 70 sessions, 5189 candles
+[warn] history SENSEX: The read operation timed out
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 118
+smartmoney block deals: 0
+--- 2026-11-19T08:48:38+05:30 intraday breadth news alerts
+intraday NIFTY: 0 candles
+intraday BANKNIFTY: 0 candles
+intraday SENSEX: 0 candles
+intraday FINNIFTY: 0 candles
+intraday MIDCPNIFTY: 0 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 21 items
+alerts: 0 fired
+--- 2026-11-19T10:51:32+05:30 intraday breadth news alerts
+intraday NIFTY: 96 candles
+intraday BANKNIFTY: 96 candles
+intraday SENSEX: 96 candles
+intraday FINNIFTY: 96 candles
+intraday MIDCPNIFTY: 96 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 23 items
+alerts: 0 fired
+--- 2026-11-19T12:50:33+05:30 intraday breadth news alerts
+intraday NIFTY: 215 candles
+intraday BANKNIFTY: 215 candles
+intraday SENSEX: 215 candles
+intraday FINNIFTY: 215 candles
+intraday MIDCPNIFTY: 215 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 23 items
+alerts: 0 fired
+--- 2026-11-19T14:51:08+05:30 intraday breadth news alerts
+intraday NIFTY: 336 candles
+intraday BANKNIFTY: 335 candles
+intraday SENSEX: 335 candles
+intraday FINNIFTY: 336 candles
+intraday MIDCPNIFTY: 336 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 25 items
+alerts: 0 fired
+--- 2026-11-20T03:20:40+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 120
+smartmoney block deals: 5
+--- 2026-11-20T08:46:20+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 120
+smartmoney block deals: 5
+--- 2026-11-20T08:46:45+05:30 intraday breadth news alerts
+intraday NIFTY: 0 candles
+intraday BANKNIFTY: 0 candles
+intraday SENSEX: 0 candles
+intraday FINNIFTY: 0 candles
+intraday MIDCPNIFTY: 0 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 21 items
+alerts: 0 fired
+--- 2026-11-20T10:50:43+05:30 intraday breadth news alerts
+intraday NIFTY: 95 candles
+intraday BANKNIFTY: 95 candles
+intraday SENSEX: 95 candles
+intraday FINNIFTY: 95 candles
+intraday MIDCPNIFTY: 95 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 22 items
+alerts: 0 fired
+--- 2026-11-20T12:50:31+05:30 intraday breadth news alerts
+intraday NIFTY: 215 candles
+intraday BANKNIFTY: 215 candles
+intraday SENSEX: 215 candles
+intraday FINNIFTY: 215 candles
+intraday MIDCPNIFTY: 215 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 22 items
+alerts: 0 fired
+--- 2026-11-20T14:50:56+05:30 intraday breadth news alerts
+intraday NIFTY: 335 candles
+intraday BANKNIFTY: 335 candles
+intraday SENSEX: 335 candles
+intraday FINNIFTY: 335 candles
+intraday MIDCPNIFTY: 335 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 24 items
+alerts: 0 fired
+--- 2026-11-21T03:04:09+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+[warn] participant OI 2026-11-10: header not found
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 108
+smartmoney block deals: 5
+--- 2026-11-23T08:47:12+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 108
+smartmoney block deals: 5
+--- 2026-11-23T08:47:38+05:30 intraday breadth news alerts
+intraday NIFTY: 0 candles
+intraday BANKNIFTY: 0 candles
+intraday SENSEX: 0 candles
+intraday FINNIFTY: 0 candles
+intraday MIDCPNIFTY: 0 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 23 items
+alerts: 0 fired
+--- 2026-11-23T10:50:33+05:30 intraday breadth news alerts
+intraday NIFTY: 95 candles
+intraday BANKNIFTY: 95 candles
+intraday SENSEX: 95 candles
+intraday FINNIFTY: 95 candles
+intraday MIDCPNIFTY: 95 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 24 items
+alerts: 0 fired
+--- 2026-11-23T12:53:32+05:30 intraday breadth news alerts
+intraday NIFTY: 218 candles
+intraday BANKNIFTY: 218 candles
+intraday SENSEX: 218 candles
+intraday FINNIFTY: 218 candles
+intraday MIDCPNIFTY: 218 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 25 items
+alerts: 0 fired
+--- 2026-11-23T14:51:19+05:30 intraday breadth news alerts
+intraday NIFTY: 336 candles
+intraday BANKNIFTY: 335 candles
+intraday SENSEX: 336 candles
+intraday FINNIFTY: 336 candles
+intraday MIDCPNIFTY: 336 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 26 items
+alerts: 0 fired
+--- 2026-11-24T06:44:29+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 89
+smartmoney block deals: 5
+--- 2026-11-25T04:47:18+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 89
+smartmoney block deals: 5
+--- 2026-11-25T08:46:15+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 89
+smartmoney block deals: 5
+--- 2026-11-25T08:46:36+05:30 intraday breadth news alerts
+intraday NIFTY: 0 candles
+intraday BANKNIFTY: 0 candles
+intraday SENSEX: 0 candles
+intraday FINNIFTY: 0 candles
+intraday MIDCPNIFTY: 0 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 24 items
+alerts: 0 fired
+--- 2026-11-25T10:50:44+05:30 intraday breadth news alerts
+intraday NIFTY: 95 candles
+intraday BANKNIFTY: 95 candles
+intraday SENSEX: 95 candles
+intraday FINNIFTY: 95 candles
+intraday MIDCPNIFTY: 95 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 26 items
+alerts: 0 fired
+--- 2026-11-25T12:50:53+05:30 intraday breadth news alerts
+intraday NIFTY: 215 candles
+intraday BANKNIFTY: 215 candles
+intraday SENSEX: 215 candles
+intraday FINNIFTY: 215 candles
+intraday MIDCPNIFTY: 215 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 28 items
+alerts: 0 fired
+--- 2026-11-25T14:50:50+05:30 intraday breadth news alerts
+intraday NIFTY: 335 candles
+intraday BANKNIFTY: 335 candles
+intraday SENSEX: 335 candles
+intraday FINNIFTY: 335 candles
+intraday MIDCPNIFTY: 335 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 29 items
+alerts: 0 fired
+--- 2026-11-26T04:19:43+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 103
+smartmoney block deals: 21
+--- 2026-11-26T08:46:41+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 103
+smartmoney block deals: 21
+--- 2026-11-26T08:47:09+05:30 intraday breadth news alerts
+intraday NIFTY: 0 candles
+intraday BANKNIFTY: 0 candles
+intraday SENSEX: 0 candles
+intraday FINNIFTY: 0 candles
+intraday MIDCPNIFTY: 0 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 25 items
+alerts: 0 fired
+--- 2026-11-26T10:50:59+05:30 intraday breadth news alerts
+intraday NIFTY: 95 candles
+intraday BANKNIFTY: 95 candles
+intraday SENSEX: 95 candles
+intraday FINNIFTY: 95 candles
+intraday MIDCPNIFTY: 95 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 28 items
+alerts: 0 fired
+--- 2026-11-26T12:51:24+05:30 intraday breadth news alerts
+intraday NIFTY: 215 candles
+intraday BANKNIFTY: 216 candles
+intraday SENSEX: 216 candles
+intraday FINNIFTY: 216 candles
+intraday MIDCPNIFTY: 215 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 28 items
+alerts: 0 fired
+--- 2026-11-26T14:50:44+05:30 intraday breadth news alerts
+intraday NIFTY: 335 candles
+intraday BANKNIFTY: 335 candles
+intraday SENSEX: 335 candles
+intraday FINNIFTY: 335 candles
+intraday MIDCPNIFTY: 335 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 29 items
+alerts: 0 fired
+--- 2026-11-27T04:07:50+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 117
+smartmoney block deals: 105
+--- 2026-11-27T08:46:29+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 117
+smartmoney block deals: 105
+--- 2026-11-27T08:46:55+05:30 intraday breadth news alerts
+intraday NIFTY: 0 candles
+intraday BANKNIFTY: 0 candles
+intraday SENSEX: 0 candles
+intraday FINNIFTY: 0 candles
+intraday MIDCPNIFTY: 0 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 27 items
+alerts: 0 fired
+--- 2026-11-27T10:51:13+05:30 intraday breadth news alerts
+intraday NIFTY: 96 candles
+intraday BANKNIFTY: 95 candles
+intraday SENSEX: 95 candles
+intraday FINNIFTY: 96 candles
+intraday MIDCPNIFTY: 96 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 28 items
+alerts: 0 fired
+--- 2026-11-27T12:50:44+05:30 intraday breadth news alerts
+intraday NIFTY: 215 candles
+intraday BANKNIFTY: 215 candles
+intraday SENSEX: 215 candles
+intraday FINNIFTY: 215 candles
+intraday MIDCPNIFTY: 215 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 29 items
+alerts: 0 fired
+--- 2026-11-27T14:51:21+05:30 intraday breadth news alerts
+intraday NIFTY: 335 candles
+intraday BANKNIFTY: 336 candles
+intraday SENSEX: 335 candles
+intraday FINNIFTY: 336 candles
+intraday MIDCPNIFTY: 336 candles
+breadth NIFTY: 50/50 quoted
+breadth BANKNIFTY: 14/14 quoted
+news: 29 items
+alerts: 0 fired
+--- 2026-11-28T03:52:27+05:30 constituents history smartmoney
+constituents NIFTY: 50 stocks
+constituents BANKNIFTY: 14 stocks
+history NIFTY: 70 sessions, 5189 candles
+history BANKNIFTY: 70 sessions, 5189 candles
+history SENSEX: 70 sessions, 5189 candles
+smartmoney participant OI: 10 days
+smartmoney bulk deals: 115
+smartmoney block deals: 11
